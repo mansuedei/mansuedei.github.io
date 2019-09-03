@@ -1,0 +1,44 @@
+.advantages {
+	margin-top: 78px;
+}
+
+.advantages__list {
+	display: flex;
+}
+
+.advantages__item {
+	display: flex;
+	margin-right: 50px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.advantages__icon {
+	color: $cyan-ic;
+}
+
+.advantages__icon--nature {
+	width: 44px;
+	height: 41px;
+	margin-right: 15px;
+}
+
+.advantages__icon--delivery {
+	width: 50px;
+	height: 40px;
+	margin-right: 18px;
+}
+
+.advantages__icon--dieting {
+	width: 42px;
+	height: 42px;
+	margin-right: 13px;
+}
+
+.advantages__desc {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 20px;
+}

@@ -1,0 +1,30 @@
+$blue-bg: #61c4d9;
+$cyan-ic: #b0f7ff;
+$grey-bg: #f2f5f4;
+$green-bg: #f8faf9;
+$grey-txt: #666666;
+$black-txt: #0d0d0d;
+$darkgrey-txt: #323232;
+
+@import "_misc/normalize.css";
+
+@import "_misc/mixins.scss";
+@import "_misc/fonts.scss";
+@import "_misc/layout.scss";
+
+// chocco section blocks start
+@import "blocks/chocco.scss";
+@import "blocks/section.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/button.scss";
+@import "blocks/advantages.scss";
+// chocco section blocks end
+
+// whyus section blocks start
+@import "blocks/whyus.scss";
+// whyus section blocks end
+
+// reviews section blocks start
+@import "blocks/reviews.scss";
+
