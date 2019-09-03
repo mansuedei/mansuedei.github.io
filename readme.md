@@ -1,10 +1,6 @@
 # Loftschool project
 
-*Author: Yana Stepanova
-*Mentor: Alexander Nesvit
+## Chocco
 
-'''bash
-
-$ git clone git@gitub/...
-
-'''
+Author: Yana Stepanova
+Mentor: Alexander Nesvit
