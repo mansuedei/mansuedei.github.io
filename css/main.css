@@ -230,6 +230,19 @@ a {
   line-height: 20px;
   max-width: 40%; }
 
+.whyus {
+  background: url("../../img/bg/whyus--grey-leaf.png") center center/cover no-repeat;
+  position: relative; }
+  .whyus:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/bg/whyus--raspberry.png");
+    width: 161px;
+    height: 315px;
+    top: 100%;
+    transform: translateY(-319px); }
+
 .whyus-headline {
   margin-top: 49px; }
 
@@ -392,8 +405,24 @@ a {
   margin-top: 8px; }
 
 .reviews {
-  background: #ffffff url("../../img/bg/bg--reviews.png") center center/cover no-repeat;
   position: relative; }
+  .reviews:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/bg/reviews--leaf&berries.png");
+    width: 139px;
+    height: 321px;
+    top: 100%;
+    transform: translateY(-319px); }
+  .reviews:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/bg/reviews--strawberries.png");
+    width: 139px;
+    height: 321px;
+    bottom: 100%; }
 
 .reviews-list {
   display: flex;
