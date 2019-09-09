@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$black-txt".
-        on line 51 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss
+        on line 71 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss
 
-46: 	align-items: center;
-47: 	flex-direction: column;
-48: }
-49: 
-50: .headline__title {
-51: 	color: $black-txt;
-52: 	font-size: 48px;
-53: 	font-weight: 700;
-54: 	text-transform: uppercase;
-55: }
-56: 
+66: 	align-items: center;
+67: 	flex-direction: column;
+68: }
+69: 
+70: .headline__title {
+71: 	color: $black-txt;
+72: 	font-size: 48px;
+73: 	font-weight: 700;
+74: 	text-transform: uppercase;
+75: }
+76: 
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:51
+C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:71
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black-txt\".\A         on line 51 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 46: 	align-items: center;\A 47: 	flex-direction: column;\A 48: }\A 49: \A 50: .headline__title {\A 51: 	color: $black-txt;\A 52: 	font-size: 48px;\A 53: 	font-weight: 700;\A 54: 	text-transform: uppercase;\A 55: }\A 56: "; }
+  content: "Error: Undefined variable: \"$black-txt\".\A         on line 71 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 66: 	align-items: center;\A 67: 	flex-direction: column;\A 68: }\A 69: \A 70: .headline__title {\A 71: 	color: $black-txt;\A 72: 	font-size: 48px;\A 73: 	font-weight: 700;\A 74: 	text-transform: uppercase;\A 75: }\A 76: "; }

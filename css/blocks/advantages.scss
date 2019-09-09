@@ -1,5 +1,5 @@
 .advantages {
-	margin-top: 78px;
+color: #ffffff;
 }
 
 .advantages__list {
@@ -7,11 +7,7 @@
 }
 
 .advantages__item {
-	display: flex;
-	margin-right: 50px;
-	&:last-child {
-		margin-right: 0;
-	}
+  display: flex;
 }
 
 .advantages__icon {
@@ -40,5 +36,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 0.05em;
-	line-height: 20px;
+  line-height: 20px;
+  // max-width: 100px;
+  max-width: 40%;
 }

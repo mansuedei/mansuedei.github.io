@@ -1,0 +1,98 @@
+.team {
+	background: #ffffff url("../../img/bg/team__background.png") center center /
+		cover no-repeat;
+	position: relative;
+}
+
+.team-headline {
+	margin-top: 73px;
+}
+
+.team-content {
+	margin-top: 58px;
+	display: flex;
+	// align-items: center;
+	// justify-content: space-between;
+}
+
+.team-list {
+	display: flex;
+	// flex: 1;
+	justify-content: space-between;
+	padding-inline-start: 0px;
+}
+
+.team-item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 25%;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-item__clickable:hover ~ .team-item__accordeon {
+	height: 100%;
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
+.team-item__clickable:hover ~ .team-item__member-name:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	border-bottom: 5px solid #0f5a47;
+	position: relative;
+	top: 55%;
+	left: 0.3em;
+	transition-duration: 0.3s;
+}
+
+.team-item__member-pic {
+	display: block;
+	width: 220px;
+	height: 288px;
+}
+
+.team-item__member-name {
+	color: $darkgrey-txt;
+	font-size: 21px;
+	font-weight: 500;
+	position: relative;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-right: 4px solid transparent;
+		border-left: 4px solid transparent;
+		border-top: 5px solid #0f5a47;
+		position: relative;
+		top: 50%;
+		left: 0.3em;
+	}
+}
+
+.team-item__accordeon {
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.team-item__job-title {
+	color: #281e1e;
+	margin-top: 17px;
+	font-size: 18px;
+}
+
+.team-item__job-responsibilities {
+	color: $grey-txt;
+	font-weight: 300;
+	margin-top: 8px;
+}

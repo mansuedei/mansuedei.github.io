@@ -1,24 +1,3 @@
-.whyus {
-	background: #ffffff url("../../img/bg/bg--whyus.png") center center / cover
-		no-repeat;
-	position: relative;
-  min-height: 700px;
-}
-
-// .section--whyus__background--leaf {
-// 	position: absolute;
-// 	left: 0px;
-// 	top: 100px;
-// 	z-index: -1;
-// }
-
-// .section--whyus__background--raspberry {
-// 	position: absolute;
-// 	left: 0px;
-// 	top: 350px;
-// 	z-index: -1;
-// }
-
 .whyus-headline {
 	margin-top: 49px;
 }
@@ -27,22 +6,24 @@
 	margin-top: 8px;
 	color: $grey-txt;
 	text-align: center;
+	max-width: 45%;
 }
 
 .whyus-content {
-	margin-top: 57px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.whyus-list {
-	display: flex;
-	// align-items: center;
-	// flex-direction: row;
+.whyus__content {
+	margin-top: 57px;
 }
 
-.whyus-item {
+.whyus-content__whyus-list {
+	display: flex;
+}
+
+.whyus-content__whyus-item {
 	display: flex;
 	flex: 1;
 	margin-right: 79px;
@@ -52,7 +33,7 @@
 	position: relative;
 
 	&:nth-of-type(2) {
-		flex: 1.08;
+		flex: 1.05;
 	}
 
 	&:last-child {

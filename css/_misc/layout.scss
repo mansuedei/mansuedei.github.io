@@ -10,6 +10,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
 	color: black;
+	margin: 0;
 }
 
 .wrapper {
@@ -21,14 +22,19 @@ body {
 }
 
 .container {
-	width: 1045px;
+	width: 940px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	min-height: 100vh;
-  justify-content: center;
+	justify-content: center;
   position: relative;
+  height: 100%;
+}
+
+.container--chocco {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
 }
 
 h1,
@@ -39,6 +45,20 @@ h5,
 h6 {
 	margin: 0;
 	font-weight: normal;
+}
+
+.main-title {
+  	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.main-description--chocco {
+	font-size: 21px;
+	font-weight: 400px;
+	letter-spacing: 0.05em;
+	line-height: 26px;
 }
 
 .headline {
@@ -85,4 +105,8 @@ button {
 	background: transparent;
 	border: none;
 	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }
