@@ -15,10 +15,11 @@
 		display: block;
 		position: absolute;
 		background-image: url("../../img/bg/reviews--strawberries.png");
-		width: 139px;
-		height: 321px;
+		width: 150px;
+		height: 86px;
 		bottom: 100%;
-		// transform: translateY(-319px);
+		right: 0;
+		transform: translate(-10px, 270px);
 	}
 }
 

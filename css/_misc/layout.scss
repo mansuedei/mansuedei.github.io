@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	height: 100%;
@@ -27,8 +31,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .container--chocco {
@@ -48,7 +52,7 @@ h6 {
 }
 
 .main-title {
-  	font-size: 60px;
+	font-size: 60px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
@@ -72,6 +76,7 @@ h6 {
 	font-size: 48px;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 table {
@@ -95,10 +100,6 @@ p {
 footer {
 	position: relative;
 	width: 100%;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 button {

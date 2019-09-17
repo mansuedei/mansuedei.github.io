@@ -2,6 +2,7 @@ $blue-bg: #61c4d9;
 $cyan-ic: #b0f7ff;
 $grey-bg: #f2f5f4;
 $green-bg: #f8faf9;
+$green-txt: #0f5a47;
 $grey-txt: #666666;
 $black-txt: #0d0d0d;
 $darkgrey-txt: #323232;
@@ -16,6 +17,7 @@ $darkgrey-txt: #323232;
 @import "blocks/chocco.scss";
 @import "blocks/section.scss";
 @import "blocks/header.scss";
+@import "blocks/phone.scss";
 @import "blocks/nav.scss";
 @import "blocks/button.scss";
 @import "blocks/advantages.scss";
@@ -33,5 +35,22 @@ $darkgrey-txt: #323232;
 @import "blocks/reviews.scss";
 // reviews section blocks end
 
+// order section blocks start
+@import "blocks/order.scss";
+@import "blocks/form.scss";
+// order section blocks end
+
+// map section blocks start
+@import "blocks/map.scss";
+// map section blocks end
+
+// fixed menu start
+@import "blocks/fixed-menu.scss";
+// fixed menu end
+
+// footer start
+@import "blocks/footer.scss";
+// footer end
 
 
+// @import "_misc/test.scss";

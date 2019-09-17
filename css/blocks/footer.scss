@@ -1,0 +1,49 @@
+.footer {
+	position: absolute;
+	padding: 0px 70px;
+	display: flex;
+	bottom: 0;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// .footer__container {
+//   display: flex;
+//   width: 80%;
+// }
+
+.footer__contacts--address {
+	font-size: 21px;
+	color: #010101;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 12px;
+}
+
+.footer__contacts--phone {
+	display: flex;
+	align-items: center;
+	font-size: 21px;
+	color: $green-txt;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.phone__symbol--footer {
+	fill: $green-txt;
+}
+
+.footer__social--list {
+	display: flex;
+}
+
+.footer__social--icon {
+	fill: #b3b3b3;
+	margin-left: 20px;
+	transition: 0.3s;
+	&:hover {
+		fill: #000000;
+	}
+}

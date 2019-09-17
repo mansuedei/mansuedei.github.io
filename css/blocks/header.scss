@@ -1,37 +1,21 @@
 .header {
-  // position: absolute;
-  display: flex;
-  top: 0;
+	display: flex;
+	top: 0;
 	color: #fff;
 	display: flex;
 	align-items: center;
-  justify-content: space-between;
-  // padding-top: 24px;
+	justify-content: space-between;
 }
 
 .logo {
-	display: block;
-	width: 56px;
-  height: 39px;
+	font-family: "MuseoSansW01-500";
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .header__buttons {
 	display: flex;
-  align-items: center;
-  padding: 0 7px;
-}
-
-.phone {
-  font-style: normal;
-  font-size: 24px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-	&:before {
-		content: "";
-		background: url("../../img/icons/phone.png") center center no-repeat;
-		width: 12px;
-    height: 11px;
-    margin-right: 6px;
-	}
+	align-items: center;
+	padding: 0 7px;
 }

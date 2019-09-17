@@ -92,13 +92,17 @@
 	}
 }
 
-.whyus-item__image-icon {
+.whyus-item__icon {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
+	fill: none;
+	stroke: #2a2a29;
+	stroke-width: 0.75;
+	stroke-miterlimit: 10;
 }
 
 .whyus-item__desc-container {

@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$black-txt".
-        on line 75 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss
+Error: Undefined variable: "$cyan-ic".
+        on line 14 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss
 
-70: 	align-items: center;
-71: 	flex-direction: column;
-72: }
-73: 
-74: .headline__title {
-75: 	color: $black-txt;
-76: 	font-size: 48px;
-77: 	font-weight: 700;
-78: 	text-transform: uppercase;
-79: 	text-align: center;
-80: }
+9: .advantages__item {
+10: 	display: flex;
+11: }
+12: 
+13: .advantages__icon {
+14: 	color: $cyan-ic;
+15: }
+16: 
+17: .advantages__icon--nature,
+18: .advantages__icon--delivery,
+19: .advantages__icon--dieting {
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:75
+C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black-txt\".\A         on line 75 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 70: 	align-items: center;\A 71: 	flex-direction: column;\A 72: }\A 73: \A 74: .headline__title {\A 75: 	color: $black-txt;\A 76: 	font-size: 48px;\A 77: 	font-weight: 700;\A 78: 	text-transform: uppercase;\A 79: 	text-align: center;\A 80: }"; }
+  content: "Error: Undefined variable: \"$cyan-ic\".\A         on line 14 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss\A \A 9: .advantages__item {\A 10: 	display: flex;\A 11: }\A 12: \A 13: .advantages__icon {\A 14: 	color: $cyan-ic;\A 15: }\A 16: \A 17: .advantages__icon--nature,\A 18: .advantages__icon--delivery,\A 19: .advantages__icon--dieting {"; }

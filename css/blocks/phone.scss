@@ -1,0 +1,23 @@
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone__symbol {
+  fill: #ffffff;
+  margin-right: 5px;
+}
+
+// .phone__symbol {
+// 	width: 12;
+// 	height: 11;
+// 	fill: #fff;
+// }
+
+.phone__number {
+	font-style: normal;
+	font-size: 24px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}

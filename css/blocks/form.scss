@@ -1,0 +1,153 @@
+.form__elem {
+	display: flex;
+}
+
+.form__column {
+	flex: 1;
+	margin-right: 20px;
+	justify-content: stretch;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.form__row {
+	display: flex;
+	margin-top: 20px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.form__block {
+	flex: 1;
+	margin-right: 20px;
+	display: block;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.form__block-title {
+	margin-bottom: 10px;
+}
+
+.form__input {
+	background: #fff;
+	border: 3px solid transparent;
+	padding: 11px 22px;
+	width: 100%;
+	color: #000;
+
+	&:focus {
+		border: 3px solid #dde3bd;
+		outline: none !important;
+	}
+
+	&--textarea {
+		resize: none;
+		height: 180px;
+	}
+}
+
+.form__radio {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	margin-right: 20px;
+}
+
+.form__radio-default {
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.form__radio-custom {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	&:after {
+		content: "";
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		background-color: $green-txt;
+		border-radius: 50%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+	}
+}
+
+.form__radio-default:checked + .form__radio-custom:after {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.form__checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.form__checkbox-default {
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.form__checkbox-custom {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	margin-right: 10px;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 8px;
+		background-color: #0f5a47;
+		transform: rotate(-45deg);
+		top: 11px;
+		left: 7px;
+		opacity: 0;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 13px;
+		background-color: $green-txt;
+		transform: rotate(45deg);
+		top: 7px;
+		left: 13px;
+		opacity: 0;
+	}
+}
+
+.form__checkbox-default:checked + .form__checkbox-custom:before {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.form__checkbox-default:checked + .form__checkbox-custom:after {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.button-form-order {
+	background: $green-txt;
+	color: #fff;
+}
+
+.button-form-cancel {
+	background: transparent;
+}
