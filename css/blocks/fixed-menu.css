@@ -1,21 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss, in `tablets'
-        from line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss
+        on line 6 of C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss, in `tablets'
+        from line 6 of C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss
 
-20: .header__buttons {
-21:   display: flex;
-22:   flex:1;
-23:   // padding: 0% 1%;
-24: 
-25: 	@include tablets() {
-26: 		display: none;
-27: 	}
-28: }
+1: .fixed-menu {
+2: 	position: fixed;
+3: 	top: rem(216px);
+4:   right: rem(51px);
+5:   
+6:   @include tablets(){
+7:     display: none;
+8:   }
+9: }
+10: 
+11: .fixed-menu__item {
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss:25:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss:25
+C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss:6:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -64,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss, in `tablets'\A         from line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss\A \A 20: .header__buttons {\A 21:   display: flex;\A 22:   flex:1;\A 23:   // padding: 0% 1%;\A 24: \A 25: 	@include tablets() {\A 26: 		display: none;\A 27: 	}\A 28: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss, in `tablets'\A         from line 6 of C:\Users\Yana\Desktop\Chocco\css\blocks\fixed-menu.scss\A \A 1: .fixed-menu {\A 2: 	position: fixed;\A 3: 	top: rem(216px);\A 4:   right: rem(51px);\A 5:   \A 6:   @include tablets(){\A 7:     display: none;\A 8:   }\A 9: }\A 10: \A 11: .fixed-menu__item {"; }

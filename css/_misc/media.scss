@@ -1,0 +1,25 @@
+@function rem($px) {
+	@return $px / 18px + 0rem;
+}
+
+@mixin tablets() {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phones() {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+  @media ( max-width: 1006px) {
+    .team-list {
+      width: 699px;
+    }
+
+    .team-item {
+      margin-bottom: 30px;
+    }
+  }

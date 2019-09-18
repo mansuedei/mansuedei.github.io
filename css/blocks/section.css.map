@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,QAAS;EACR,MAAM,EAAE,KAAK;EACZ,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,KAAK",
+"mappings": "AAAA,QAAS;EACR,MAAM,EAAE,KAAK;EACZ,QAAQ,EAAE,QAAQ",
 "sources": ["section.scss"],
 "names": [],
 "file": "section.css"

@@ -1,9 +1,20 @@
 .advantages {
-	color: #ffffff;
+  color: #ffffff;
+  z-index: 2;
 }
 
 .advantages__list {
-	display: flex;
+  display: flex;
+  min-width: 68vw;
+
+	@include tablets() {
+    justify-content: center;
+    width: 100vw;
+  }
+  
+  @include phones() {
+    padding: 0 rem(20px);
+  }
 }
 
 .advantages__item {
@@ -11,30 +22,20 @@
 }
 
 .advantages__icon {
-	color: $cyan-ic;
-}
-
-.advantages__icon--nature,
-.advantages__icon--delivery,
-.advantages__icon--dieting {
 	fill: none;
 	stroke: #b0f7ff;
 	stroke-width: 0.5;
 	stroke-miterlimit: 10;
-	margin-right: 7px;
-}
-
-.advantages__icon--dieting {
-	width: 42px;
-	height: 42px;
-	margin-right: 13px;
+	margin-right: rem(7px);
 }
 
 .advantages__desc {
-	font-size: 16px;
+	display: flex;
+	flex-grow: 1;
+	font-size: rem(16px);
 	font-weight: 400;
 	letter-spacing: 0.05em;
-	line-height: 20px;
-	// max-width: 100px;
-	max-width: 40%;
+	line-height: rem(20px);
+	// max-width: rem(100px);
+	max-width: 50%;
 }

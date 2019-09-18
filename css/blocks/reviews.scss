@@ -1,5 +1,6 @@
 .reviews {
 	position: relative;
+	margin-bottom: rem(60px);
 	&:before {
 		content: "";
 		display: block;
@@ -8,7 +9,7 @@
 		width: 139px;
 		height: 321px;
 		top: 100%;
-		transform: translateY(-319px);
+		transform: translateY(rem(-119px));
 	}
 	&:after {
 		content: "";
@@ -19,30 +20,51 @@
 		height: 86px;
 		bottom: 100%;
 		right: 0;
-		transform: translate(-10px, 270px);
+		transform: translate(-4px, 110px);
 	}
+}
+
+.reviews-headline {
+	margin-top: rem(50px);
+}
+
+.reviews-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .reviews-list {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	@include tablets() {
+		width: 70%;
+	}
+
+	@include phones() {
+		width: 90vw;
+	}
 }
 
 .reviews-item {
 	display: flex;
 	background: $green-bg;
-	margin-top: 30px;
+	margin-top: rem(30px);
 	position: relative;
-	padding: 50px 45px;
+	padding: rem(50px) rem(45px);
+
+	@include tablets() {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 
 	&:before {
 		content: "";
 		display: block;
 		position: absolute;
-		width: 90px;
-		height: 50px;
+		width: rem(90px);
+		height: rem(50px);
 		background-color: #ffffff;
 		border-radius: 50%;
 		left: 45.5%;
@@ -54,8 +76,8 @@
 		position: absolute;
 		background: url("../../img/bg/bg--reviews__leaves.png") no-repeat center
 			center;
-		width: 127px;
-		height: 167px;
+		width: rem(127px);
+		height: rem(167px);
 		right: 0%;
 		top: 0%;
 	}
@@ -63,9 +85,19 @@
 
 .reviews-texts__userpic {
 	display: block;
-	width: 260px;
-	height: 260px;
-	margin-right: 20px;
+	width: rem(260px);
+	height: rem(260px);
+	margin-right: rem(20px);
+
+	@include tablets() {
+		margin-right: 0;
+		margin-bottom: rem(30px);
+	}
+
+	@include phones() {
+		width: rem(122px);
+		height: rem(122px);
+	}
 }
 
 .reviews-texts__container {
@@ -74,24 +106,28 @@
 	flex: 0.8;
 	align-items: flex-start;
 	justify-content: center;
+
+	@include tablets() {
+		align-items: center;
+	}
 }
 
 .reviews-texts__title {
 	color: $darkgrey-txt;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: rem(30px);
 }
 
 .reviews-texts__desc {
 	color: $grey-txt;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: rem(30px);
 }
 
 .reviews-content__username {
 	color: $grey-txt;
 	font-weight: 500;
-	margin-top: 30px;
+	margin-top: rem(30px);
 }
 
 .reviews-buttons {
@@ -100,7 +136,7 @@
 }
 
 .reviews__buttons {
-	margin-top: 30px;
+	margin-top: rem(30px);
 }
 
 .reviews-buttons__list {
@@ -108,7 +144,7 @@
 }
 
 .reviews-buttons__item {
-	margin-right: 10px;
+	margin-right: rem(10px);
 	&:nth-last-of-type(1) {
 		margin-right: 0;
 	}
@@ -116,18 +152,23 @@
 
 .reviews-buttons__item.active {
 	.reviews-buttons-userpic {
-		border: 6px solid #0f5a47;
+		border: rem(6px) solid #0f5a47;
 	}
 }
 
 .reviews-buttons-userpic {
 	display: block;
-	width: 68px;
-	height: 68px;
+	width: rem(68px);
+	height: rem(68px);
 	border-radius: 50%;
-	border: 6px solid transparent;
+	border: rem(6px) solid transparent;
 	&:hover {
-		border: 6px solid #0f5a47;
+		border: rem(6px) solid #0f5a47;
 		transition-duration: 0.3s;
+	}
+
+	@include tablets() {
+		width: rem(100px);
+		height: rem(100px);
 	}
 }

@@ -1,5 +1,8 @@
 .section {
-	height: 100vh;
-  position: relative;
-  min-height: 650px;
+	min-height: 100vh;
+	position: relative;
+
+	@include tablets() {
+		height: auto;
+	}
 }

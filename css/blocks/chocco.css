@@ -1,26 +1,20 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss, in `tablets'
-        from line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss
+Error: Undefined variable: "$blue-bg".
+        on line 2 of C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss
 
-20: .header__buttons {
-21:   display: flex;
-22:   flex:1;
-23:   // padding: 0% 1%;
-24: 
-25: 	@include tablets() {
-26: 		display: none;
-27: 	}
-28: }
+1: .chocco {
+2: 	background-color: $blue-bg;
+3: 	display: flex;
+4: 	position: relative;
+5: 	padding-top: rem(24px);
+6: 	padding-bottom: rem(50px);
+7: 	&:before {
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss:25:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss:25
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss:2
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -64,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss, in `tablets'\A         from line 25 of C:\Users\Yana\Desktop\Chocco\css\blocks\header.scss\A \A 20: .header__buttons {\A 21:   display: flex;\A 22:   flex:1;\A 23:   // padding: 0% 1%;\A 24: \A 25: 	@include tablets() {\A 26: 		display: none;\A 27: 	}\A 28: }"; }
+  content: "Error: Undefined variable: \"$blue-bg\".\A         on line 2 of C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss\A \A 1: .chocco {\A 2: 	background-color: $blue-bg;\A 3: 	display: flex;\A 4: 	position: relative;\A 5: 	padding-top: rem(24px);\A 6: 	padding-bottom: rem(50px);\A 7: 	&:before {"; }

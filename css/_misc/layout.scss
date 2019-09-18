@@ -2,6 +2,18 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 18px;
+
+	@include tablets {
+		font-size: 17px;
+	}
+
+	@include phones {
+		font-size: 16px;
+	}
+}
+
 html,
 body {
 	height: 100%;
@@ -9,7 +21,6 @@ body {
 }
 
 body {
-	font-size: 18px;
 	-webkit-font-smoothing: antialised;
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
@@ -20,25 +31,34 @@ body {
 .wrapper {
 	position: relative;
 	width: 100%;
-	min-width: 940px + 20px;
+	// min-width: rem(940px) + rem(20px);
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	// justify-content: center;
+}
+
+.maincontent {
+	width: 100%;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
 }
 
 .container {
-	width: 940px;
+	width: 95%;
+	max-width: 940px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 100vh;
 	position: relative;
-	height: 100%;
-}
+	min-height: auto;
 
-.container--chocco {
-	display: flex;
-	align-items: stretch;
-	justify-content: space-between;
+	@include tablets() {
+		height: auto;
+	}
 }
 
 h1,
@@ -56,13 +76,10 @@ h6 {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
-}
 
-.main-description--chocco {
-	font-size: 21px;
-	font-weight: 400px;
-	letter-spacing: 0.05em;
-	line-height: 26px;
+	@include phones() {
+		font-size: 50px;
+	}
 }
 
 .headline {
@@ -77,6 +94,10 @@ h6 {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+
+	@include phones() {
+		font-size: 40px;
+	}
 }
 
 table {

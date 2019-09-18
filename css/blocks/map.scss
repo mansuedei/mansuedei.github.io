@@ -1,8 +1,17 @@
 .map {
-	position: relative;
+	// background-image: url("../../img/content/map--map-image.png");
+  // background-size: cover;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
+
+
 .map__image {
-	max-width: 100%;
-	height: auto;
+  width: 100vw;
+  max-width: 1100px;
+  height: auto;
 }

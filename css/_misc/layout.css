@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$black-txt".
-        on line 75 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss
+Error: Undefined mixin 'tablets'.
+        on line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss, in `tablets'
+        from line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss
 
-70: 	align-items: center;
-71: 	flex-direction: column;
-72: }
-73: 
-74: .headline__title {
-75: 	color: $black-txt;
-76: 	font-size: 48px;
-77: 	font-weight: 700;
-78: 	text-transform: uppercase;
-79: 	text-align: center;
-80: }
+3: }
+4: 
+5: html {
+6: 	font-size: 18px;
+7: 
+8: 	@include tablets {
+9: 		font-size: 17px;
+10: 	}
+11: 
+12: 	@include phones {
+13: 		font-size: 16px;
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:75
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:8:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:8
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black-txt\".\A         on line 75 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 70: 	align-items: center;\A 71: 	flex-direction: column;\A 72: }\A 73: \A 74: .headline__title {\A 75: 	color: $black-txt;\A 76: 	font-size: 48px;\A 77: 	font-weight: 700;\A 78: 	text-transform: uppercase;\A 79: 	text-align: center;\A 80: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss, in `tablets'\A         from line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 3: }\A 4: \A 5: html {\A 6: 	font-size: 18px;\A 7: \A 8: 	@include tablets {\A 9: 		font-size: 17px;\A 10: 	}\A 11: \A 12: 	@include phones {\A 13: 		font-size: 16px;"; }

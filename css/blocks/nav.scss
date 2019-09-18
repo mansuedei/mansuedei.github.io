@@ -1,17 +1,23 @@
+.nav {
+	display: flex;
+	flex: 1;
+}
+
 .nav__list {
 	display: flex;
-	align-items: center;
-  justify-content: space-between;
+	flex: 1;
+	justify-content: space-between;
 }
 
 .nav__item {
 	display: flex;
-  align-items: center;
-  margin-right: 26px;
+	// align-items: flex-start;
+	// justify-content: stretch;
+	// margin-right: rem(1px);
 
-  &:last-child {
-    margin-right: 0;
-  }
+	// &:last-child {
+	//   margin-right: 0;
+	// }
 }
 
 .nav__link {

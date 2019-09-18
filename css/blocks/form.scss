@@ -1,27 +1,48 @@
 .form__elem {
 	display: flex;
+
+	@include tablets() {
+		flex-direction: column;
+		padding: 0 rem(110px);
+  }
+  
+  @include phones() {
+    padding: 0;
+  }
 }
 
 .form__column {
 	flex: 1;
-	margin-right: 20px;
+	margin-right: rem(20px);
 	justify-content: stretch;
 	&:last-child {
 		margin-right: 0;
+	}
+
+	@include tablets() {
+		margin-right: 0;
+		margin-top: rem(20px);
 	}
 }
 
 .form__row {
 	display: flex;
-	margin-top: 20px;
+	margin-top: rem(20px);
 	&:first-child {
 		margin-top: 0;
+	}
+
+	@include tablets() {
+		justify-content: center;
+		&--buttons {
+			margin-top: rem(40px);
+		}
 	}
 }
 
 .form__block {
 	flex: 1;
-	margin-right: 20px;
+	margin-right: rem(20px);
 	display: block;
 	&:last-child {
 		margin-right: 0;
@@ -29,24 +50,28 @@
 }
 
 .form__block-title {
-	margin-bottom: 10px;
+	margin-bottom: rem(10px);
 }
 
 .form__input {
 	background: #fff;
-	border: 3px solid transparent;
-	padding: 11px 22px;
+	border: rem(3px) solid transparent;
+	padding: rem(11px) rem(22px);
 	width: 100%;
 	color: #000;
 
 	&:focus {
-		border: 3px solid #dde3bd;
+		border: rem(3px) solid #dde3bd;
 		outline: none !important;
 	}
 
 	&--textarea {
 		resize: none;
-		height: 180px;
+		height: rem(180px);
+
+		// @include tablets() {
+		//   width: rem(180px);
+		// }
 	}
 }
 
@@ -55,7 +80,7 @@
 	align-items: center;
 	cursor: pointer;
 	user-select: none;
-	margin-right: 20px;
+	margin-right: rem(20px);
 }
 
 .form__radio-default {
@@ -66,16 +91,16 @@
 
 .form__radio-custom {
 	position: relative;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 	background-color: #fff;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: rem(10px);
 	&:after {
 		content: "";
 		position: absolute;
-		width: 14px;
-		height: 14px;
+		width: rem(14px);
+		height: rem(14px);
 		background-color: $green-txt;
 		border-radius: 50%;
 		left: 50%;
@@ -105,30 +130,30 @@
 
 .form__checkbox-custom {
 	position: relative;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 	background-color: #fff;
-	margin-right: 10px;
+	margin-right: rem(10px);
 	&:before {
 		content: "";
 		position: absolute;
-		width: 3px;
-		height: 8px;
+		width: rem(3px);
+		height: rem(8px);
 		background-color: #0f5a47;
 		transform: rotate(-45deg);
-		top: 11px;
-		left: 7px;
+		top: rem(11px);
+		left: rem(7px);
 		opacity: 0;
 	}
 	&:after {
 		content: "";
 		position: absolute;
-		width: 3px;
-		height: 13px;
+		width: rem(3px);
+		height: rem(13px);
 		background-color: $green-txt;
 		transform: rotate(45deg);
-		top: 7px;
-		left: 13px;
+		top: rem(7px);
+		left: rem(13px);
 		opacity: 0;
 	}
 }

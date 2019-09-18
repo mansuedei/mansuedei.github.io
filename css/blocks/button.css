@@ -1,0 +1,10 @@
+.button {
+  background: #ffffff;
+  padding: rem(23px) rem(44px);
+  border-radius: rem(40px);
+  text-transform: uppercase;
+  color: #0f5a47;
+  font-weight: 900;
+  font-size: rem(19px); }
+
+/*# sourceMappingURL=button.css.map */

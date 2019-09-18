@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  flex: 1; }
+
+.nav__list {
+  display: flex;
+  flex: 1;
+  justify-content: space-between; }
+
+.nav__item {
+  display: flex; }
+
+.nav__link {
+  text-decoration: none;
+  color: white; }
+
+/*# sourceMappingURL=nav.css.map */

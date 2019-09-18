@@ -1,24 +1,39 @@
 /*
-Error: Undefined variable: "$grey-txt".
-        on line 23 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss
+Error: Undefined mixin 'phones'.
+        on line 12 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss, in `phones'
+        from line 12 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss
 
-18: 	margin-top: 49px;
-19: }
-20: 
-21: .whyus-headline__desc {
-22: 	margin-top: 8px;
-23: 	color: $grey-txt;
-24: 	text-align: center;
-25: 	max-width: 45%;
-26: }
-27: 
-28: .whyus-content {
+7: 		background-image: url("../../img/bg/whyus--raspberry.png");
+8: 		width: 161px;
+9: 		height: 315px;
+10: 		top: 100%;
+11: 		transform: translateY(rem(-200px));
+12: 		@include phones() {
+13: 			display: none;
+14: 		}
+15: 	}
+16: 
+17: 	&:after {
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss:23
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss:12:in `phones'
+C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss:12
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey-txt\".\A         on line 23 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss\A \A 18: 	margin-top: 49px;\A 19: }\A 20: \A 21: .whyus-headline__desc {\A 22: 	margin-top: 8px;\A 23: 	color: $grey-txt;\A 24: 	text-align: center;\A 25: 	max-width: 45%;\A 26: }\A 27: \A 28: .whyus-content {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 12 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss, in `phones'\A         from line 12 of C:\Users\Yana\Desktop\Chocco\css\blocks\whyus.scss\A \A 7: 		background-image: url(\"../../img/bg/whyus--raspberry.png\");\A 8: 		width: 161px;\A 9: 		height: 315px;\A 10: 		top: 100%;\A 11: 		transform: translateY(rem(-200px));\A 12: 		@include phones() {\A 13: 			display: none;\A 14: 		}\A 15: 	}\A 16: \A 17: 	&:after {"; }

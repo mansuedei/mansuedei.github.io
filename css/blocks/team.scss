@@ -8,36 +8,44 @@
 		width: 104px;
 		height: 114px;
 		top: 100%;
+		z-index: 1;
 	}
 	&:after {
 		content: "";
 		position: absolute;
 		display: block;
 		background-image: url("../../img/bg/team--leaf-berries.png");
-		width: 196px;
-		height: 578px;
+		width: rem(196px);
+		height: rem(578px);
 		top: 0%;
 		right: 0;
-		// transform: translateY(40px);
+		z-index: -1;
+		transform: translateY(rem(-300px));
 	}
 }
 
 .team-headline {
-	margin-top: 73px;
+	margin-top: rem(73px);
 }
 
 .team-content {
-	margin-top: 58px;
+	margin-top: rem(58px);
 	display: flex;
-	// align-items: center;
-	// justify-content: space-between;
+	justify-content: center;
 }
 
 .team-list {
 	display: flex;
-	// flex: 1;
-	justify-content: space-between;
-	padding-inline-start: 0px;
+	padding-inline-start: rem(0px);
+	flex-wrap: wrap;
+	justify-content: center;
+
+	//  @include tablets__team-list(){
+	//   width:699px;
+	// }
+
+	@include tablets() {
+	}
 }
 
 .team-item {
@@ -45,12 +53,20 @@
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	width: 25%;
-}
+	width: 220px;
+	margin-right: 20px;
 
-.team-item {
-	display: flex;
-	flex-direction: column;
+	&:last-of-type {
+		margin-right: 0px;
+	}
+
+	@include tablets() {
+		margin-bottom: 30px;
+	}
+
+	@include phones() {
+		width: 190px;
+	}
 }
 
 .team-item__clickable:hover ~ .team-item__accordeon {
@@ -63,9 +79,9 @@
 	content: "";
 	width: 0;
 	height: 0;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-	border-bottom: 5px solid #0f5a47;
+	border-right: rem(4px) solid transparent;
+	border-left: rem(4px) solid transparent;
+	border-bottom: rem(5px) solid #0f5a47;
 	position: relative;
 	top: 55%;
 	left: 0.3em;
@@ -87,14 +103,19 @@
 
 .team-item__member-pic {
 	display: block;
-	width: 220px;
-	height: 288px;
+	width: rem(220px);
+	height: rem(288px);
+
+	@include phones() {
+		width: rem(144px);
+		height: rem(185px);
+	}
 }
 
 .team-item__member-name {
-  margin-top: 24px;
+	margin-top: rem(24px);
 	color: $darkgrey-txt;
-	font-size: 21px;
+	font-size: rem(21px);
 	font-weight: 500;
 	position: relative;
 	display: flex;
@@ -103,9 +124,9 @@
 		content: "";
 		width: 0;
 		height: 0;
-		border-right: 4px solid transparent;
-		border-left: 4px solid transparent;
-		border-top: 5px solid #0f5a47;
+		border-right: rem(4px) solid transparent;
+		border-left: rem(4px) solid transparent;
+		border-top: rem(5px) solid #0f5a47;
 		position: relative;
 		top: 0.5em;
 		left: 0.3em;
@@ -117,16 +138,17 @@
 	overflow: hidden;
 	opacity: 0;
 	transition: 0.3s;
+	height: 0;
 }
 
 .team-item__job-title {
 	color: #281e1e;
-	margin-top: 17px;
-	font-size: 18px;
+	margin-top: rem(17px);
+	font-size: rem(18px);
 }
 
 .team-item__job-responsibilities {
 	color: $grey-txt;
 	font-weight: 300;
-	margin-top: 8px;
+	margin-top: rem(8px);
 }
