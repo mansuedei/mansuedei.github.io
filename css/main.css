@@ -385,7 +385,7 @@ a {
       width: 100vw; } }
   @media screen and (max-width: 480px) {
     .advantages__list {
-      padding: 0 0.5555555556rem; } }
+      padding: 0; } }
 
 .advantages__item {
   display: flex; }
