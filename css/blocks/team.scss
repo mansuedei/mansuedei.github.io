@@ -44,7 +44,7 @@
 	//   width:699px;
 	// }
 
-	@include tablets() {
+	@include phones() {
 	}
 }
 
@@ -65,7 +65,8 @@
 	}
 
 	@include phones() {
-		width: 190px;
+		width: 160px;
+		margin-right: 0;
 	}
 }
 

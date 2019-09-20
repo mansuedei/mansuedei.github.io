@@ -1,0 +1,29 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	@include phones() {
+		align-items: center;
+		margin-bottom: rem(20px);
+	}
+}
+
+.contacts__address {
+	font-size: rem(21px);
+	color: #010101;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: rem(12px);
+}
+
+.contacts__phone {
+	display: flex;
+	align-items: center;
+	font-size: rem(21px);
+	color: $green-txt;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.phone__symbol--footer {
+	fill: $green-txt;
+}

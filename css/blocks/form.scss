@@ -4,11 +4,11 @@
 	@include tablets() {
 		flex-direction: column;
 		padding: 0 rem(110px);
-  }
-  
-  @include phones() {
-    padding: 0;
-  }
+	}
+
+	@include phones() {
+		padding: 0;
+	}
 }
 
 .form__column {
@@ -36,6 +36,12 @@
 		justify-content: center;
 		&--buttons {
 			margin-top: rem(40px);
+		}
+	}
+
+	@include phones() {
+		&--buttons {
+			margin-top: rem(30px);
 		}
 	}
 }
@@ -69,9 +75,9 @@
 		resize: none;
 		height: rem(180px);
 
-		// @include tablets() {
-		//   width: rem(180px);
-		// }
+		@include phones() {
+			height: rem(100px);
+		}
 	}
 }
 

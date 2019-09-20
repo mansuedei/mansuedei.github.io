@@ -29,7 +29,7 @@
 		top: 100%;
 		right: 0%;
 		transform: translateY(rem(-296px));
-		z-index: 1;
+		z-index: -2;
 
 		@include tablets() {
 			display: none;
@@ -69,15 +69,20 @@
 }
 
 .chocco-content {
-	display: flex;
-	align-items: flex-start;
+  display: flex;
+  flex: 1;
+	align-items: flex-end;
 	flex-direction: column;
 	color: white;
 
 	@include tablets() {
 		align-items: center;
 		text-align: center;
-	}
+  }
+  
+  @include phones() {
+    justify-content: flex-end;
+  }
 }
 
 .chocco__tablet-background {
@@ -87,15 +92,28 @@
 		display: block;
 		margin-bottom: rem(20px);
 	}
+
+	@include phones() {
+		width: 80%;
+		height: auto;
+		top: 0;
+		position: absolute;
+		z-index: 0;
+	}
 }
 
 .main-title--chocco {
 	padding-bottom: rem(6px);
 	max-width: 50%;
+	z-index: 2;
 
 	@include tablets() {
 		max-width: 100%;
 		letter-spacing: normal;
+	}
+
+	@include phones() {
+		font-size: rem(45px);
 	}
 }
 
@@ -106,14 +124,21 @@
 	font-weight: 400px;
 	letter-spacing: 0.05em;
 	line-height: rem(26px);
+	z-index: 2;
 
 	@include tablets() {
-    letter-spacing: normal;
-    font-size: 17px;
-    max-width: 62%;
+		letter-spacing: normal;
+		font-size: 17px;
+		max-width: 62%;
+	}
+
+	@include phones() {
+		font-size: rem(20px);
+		max-width: 80%;
 	}
 }
 
 .button--chocco {
 	margin-bottom: rem(32px);
+	z-index: 2;
 }

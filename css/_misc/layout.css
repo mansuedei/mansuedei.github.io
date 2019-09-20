@@ -13,7 +13,7 @@ Error: Undefined mixin 'tablets'.
 10: 	}
 11: 
 12: 	@include phones {
-13: 		font-size: 16px;
+13: 		font-size: 15px;
 
 Backtrace:
 C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss:8:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss, in `tablets'\A         from line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 3: }\A 4: \A 5: html {\A 6: 	font-size: 18px;\A 7: \A 8: 	@include tablets {\A 9: 		font-size: 17px;\A 10: 	}\A 11: \A 12: 	@include phones {\A 13: 		font-size: 16px;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss, in `tablets'\A         from line 8 of C:\Users\Yana\Desktop\Chocco\css\_misc\layout.scss\A \A 3: }\A 4: \A 5: html {\A 6: 	font-size: 18px;\A 7: \A 8: 	@include tablets {\A 9: 		font-size: 17px;\A 10: 	}\A 11: \A 12: 	@include phones {\A 13: 		font-size: 15px;"; }

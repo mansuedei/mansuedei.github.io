@@ -1,0 +1,19 @@
+.socials {
+	display: flex;
+}
+
+.socials__list {
+	display: flex;
+}
+
+.socials__item {
+	margin-left: rem(20px);
+}
+
+.socials__link--icon {
+	fill: #b3b3b3;
+	transition: 0.3s;
+	&:hover {
+		fill: #000000;
+	}
+}

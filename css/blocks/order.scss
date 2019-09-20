@@ -4,12 +4,17 @@
 	color: $green-txt;
 }
 
-.container--order{
-  padding-bottom: rem(66px);
+.container--order {
+	padding-bottom: rem(66px);
 }
 
 .headline__title--order {
 	color: $green-txt;
 	margin-top: rem(50px);
 	margin-bottom: rem(50px);
+
+	@include phones {
+		margin-top: rem(20px);
+		margin-bottom: rem(0px);
+	}
 }

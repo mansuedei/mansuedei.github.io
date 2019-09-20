@@ -1,6 +1,6 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'
+Error: Undefined mixin 'phones'.
+        on line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `phones'
         from line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss
 
 42: 
@@ -8,7 +8,7 @@ Error: Undefined mixin 'tablets'.
 44: 	//   width:699px;
 45: 	// }
 46: 
-47: 	@include tablets() {
+47: 	@include phones() {
 48: 	}
 49: }
 50: 
@@ -16,7 +16,7 @@ Error: Undefined mixin 'tablets'.
 52: 	display: flex;
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:47:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:47:in `phones'
 C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:47
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'\A         from line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss\A \A 42: \A 43: 	//  @include tablets__team-list(){\A 44: 	//   width:699px;\A 45: 	// }\A 46: \A 47: 	@include tablets() {\A 48: 	}\A 49: }\A 50: \A 51: .team-item {\A 52: 	display: flex;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `phones'\A         from line 47 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss\A \A 42: \A 43: 	//  @include tablets__team-list(){\A 44: 	//   width:699px;\A 45: 	// }\A 46: \A 47: 	@include phones() {\A 48: 	}\A 49: }\A 50: \A 51: .team-item {\A 52: 	display: flex;"; }

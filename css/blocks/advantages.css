@@ -5,15 +5,15 @@ Error: Undefined mixin 'tablets'.
 
 5: 
 6: .advantages__list {
-7:   display: flex;
-8:   min-width: 68vw;
+7: 	display: flex;
+8: 	min-width: 68vw;
 9: 
 10: 	@include tablets() {
-11:     justify-content: center;
-12:     width: 100vw;
-13:   }
-14:   
-15:   @include phones() {
+11: 		justify-content: center;
+12: 		width: 100vw;
+13: 	}
+14: 
+15: 	@include phones() {
 
 Backtrace:
 C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:10:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'\A         from line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss\A \A 5: \A 6: .advantages__list {\A 7:   display: flex;\A 8:   min-width: 68vw;\A 9: \A 10: 	@include tablets() {\A 11:     justify-content: center;\A 12:     width: 100vw;\A 13:   }\A 14:   \A 15:   @include phones() {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'\A         from line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss\A \A 5: \A 6: .advantages__list {\A 7: 	display: flex;\A 8: 	min-width: 68vw;\A 9: \A 10: 	@include tablets() {\A 11: 		justify-content: center;\A 12: 		width: 100vw;\A 13: 	}\A 14: \A 15: 	@include phones() {"; }
