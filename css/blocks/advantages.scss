@@ -6,6 +6,7 @@
 .advantages__list {
 	display: flex;
 	min-width: 68vw;
+	flex-wrap: wrap;
 
 	@include tablets() {
 		justify-content: center;
@@ -13,12 +14,17 @@
 	}
 
 	@include phones() {
-		padding: 0;
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 }
 
 .advantages__item {
 	display: flex;
+
+	@include phones() {
+		padding-bottom: rem(10px);
+	}
 }
 
 .advantages__icon {

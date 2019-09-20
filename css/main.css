@@ -378,17 +378,22 @@ a {
 
 .advantages__list {
   display: flex;
-  min-width: 68vw; }
+  min-width: 68vw;
+  flex-wrap: wrap; }
   @media screen and (max-width: 768px) {
     .advantages__list {
       justify-content: center;
       width: 100vw; } }
   @media screen and (max-width: 480px) {
     .advantages__list {
-      padding: 0; } }
+      align-items: flex-start;
+      justify-content: flex-start; } }
 
 .advantages__item {
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .advantages__item {
+      padding-bottom: 0.5555555556rem; } }
 
 .advantages__icon {
   fill: none;
