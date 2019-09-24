@@ -5,10 +5,9 @@
 	color: black;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 940px;
+	max-width: 90vw;
 
 	@include phones() {
 		flex-direction: column;
 	}
 }
-

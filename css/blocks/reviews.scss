@@ -76,10 +76,21 @@
 		position: absolute;
 		background: url("../../img/bg/bg--reviews__leaves.png") no-repeat center
 			center;
+		background-size: cover;
 		width: rem(127px);
 		height: rem(167px);
 		right: 0%;
 		top: 0%;
+
+		@include tablets() {
+			width: 11vw;
+			height: 15vh;
+		}
+
+		@include phones() {
+			width: rem(127px);
+			height: rem(167px);
+		}
 	}
 }
 

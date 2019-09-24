@@ -14,12 +14,15 @@ $darkgrey-txt: #323232;
 @import "_misc/layout.scss";
 @import "_misc/media.scss";
 
+//hamburger menu start
+@import "blocks/hamburger-menu.scss";
+//hamburger menu end
+
 // chocco section blocks start
 @import "blocks/chocco.scss";
 @import "blocks/section.scss";
 @import "blocks/header.scss";
 @import "blocks/phone.scss";
-@import "blocks/hamburger-menu.scss";
 @import "blocks/nav.scss";
 @import "blocks/button.scss";
 @import "blocks/advantages.scss";
@@ -28,6 +31,10 @@ $darkgrey-txt: #323232;
 // whyus section blocks start
 @import "blocks/whyus.scss";
 // whyus section blocks end
+
+//bar types section blocks start
+@import "blocks/bar-types.scss";
+//bar types section blocks end
 
 // team section blocks start
 @import "blocks/team.scss";

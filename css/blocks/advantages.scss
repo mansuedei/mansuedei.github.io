@@ -14,16 +14,18 @@
 	}
 
 	@include phones() {
-		align-items: flex-start;
-		justify-content: flex-start;
+		align-items: flex-end;
+		justify-content: center;
 	}
 }
 
 .advantages__item {
 	display: flex;
 
-	@include phones() {
+	@include tablets() {
 		padding-bottom: rem(10px);
+		width: 30vw;
+		min-width: rem(150px);
 	}
 }
 
@@ -47,5 +49,6 @@
 
 	@include phones() {
 		font-size: 12px;
+		max-width: 30%;
 	}
 }

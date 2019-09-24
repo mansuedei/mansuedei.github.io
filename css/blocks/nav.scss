@@ -7,17 +7,20 @@
 	display: flex;
 	flex: 1;
 	justify-content: space-between;
+
+	@include tablets() {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .nav__item {
 	display: flex;
-	// align-items: flex-start;
-	// justify-content: stretch;
-	// margin-right: rem(1px);
 
-	// &:last-child {
-	//   margin-right: 0;
-	// }
+	@include tablets() {
+		margin-bottom: rem(20px);
+	}
 }
 
 .nav__link {

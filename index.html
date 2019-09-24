@@ -21,64 +21,70 @@
 
           <!-- header start -->
           <header class="header">
-            <div class="logo">
-              CHO<br>
-              CCO
-            </div>
-            <div class="header__buttons">
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">О нас</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Батончики</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Команда</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Меню</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Отзывы</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Как мы работаем</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="phone">
-              <svg class="phone__symbol" width="12" ; height="11" ; viewBox="0 0 12 11">
-                <use xlink:href="./img/sprite/sprite.svg#phone__symbol"></use>
-              </svg>
-              <address class="phone__number">8 800 903 90 90</address>
-            </div>
-            <div class="hamburger-menu">
-              <input type="checkbox" class="hamburger-menu__toggler">
-              <div class="hamburger-menu__hamburger">
-                <div class="hamburger-menu__hamburger--line"></div>
+
+            <div class="hamburgermenu">
+              <div class="hamburger-menu__logo">
+                CHO<br>
+                CCO
               </div>
-              <div class="hamburger-menu__menu"></div>
+              <div class="header__buttons">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Батончики</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Команда</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Как мы работаем</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="phone">
+                <svg class="phone__symbol" width="12" ; height="11" ; viewBox="0 0 12 11">
+                  <use xlink:href="./img/sprite/sprite.svg#phone__symbol"></use>
+                </svg>
+                <address class="phone__number">8 800 903 90 90</address>
+              </div>
             </div>
+
+            <div class="hamburger-button">
+              <div class="hamburger-button__toggler" id="hamburger-button__toggler"></div>
+              <div class="hamburger-button__icon">
+                <div class="hamburger-button__icon--line"></div>
+              </div>
+            </div>
+
           </header>
           <!-- header end -->
 
           <div class="chocco-content">
             <img class="chocco__tablet-background" src="./img/bg/bg--chocco--tablet.png">
-            <h1 class="main-title main-title--chocco">
-              натуральные шоколадные батончики
-            </h1>
-            <h3 class="main-description main-description--chocco">
-              Наши батончики идеально подходят для тех, кто следит за своим здоровьем
-            </h3>
-            <button type="button" class="button button--chocco">
-              Заказать
-            </button>
+            <div class="chocco-description">
+              <h1 class="main-title main-title--chocco">
+                натуральные шоколадные батончики
+              </h1>
+              <h3 class="main-description main-description--chocco">
+                Наши батончики идеально подходят для тех, кто следит за своим здоровьем
+              </h3>
+              <button type="button" class="button button--chocco">
+                Заказать
+              </button>
+            </div>
           </div>
           <div class="advantages">
             <ul class="advantages__list">
@@ -197,6 +203,62 @@
             </ul>
           </div>
         </div>
+      </section>
+
+      <section class="bar-types">
+        <img class="arrow arrow--left" src="./img/bg/arrow--left.png" alt="">
+        <div class="container container--bar-types">
+          <ul class="bar-types__list">
+            <li class="bar-types__item">
+              <img class="bar-types__image" src="./img/content/ingredients--bars--seaweed.png" alt="">
+              <div class="bar-types__textbox">
+                <div class="bar-types__ingredients">
+                  <svg class="bar-types__bar-icon" width="51" ; height="51" ; viewBox="0 0 442.326 442.326">
+                    <use xlink:href="./img/sprite/sprite.svg#bar-types__bar-icon"></use>
+                  </svg>
+                  Состав
+                </div>
+                <h3 class="bar-types__headline">Батончик “Морские
+                  водоросли”</h3>
+                <p class="bar-types__desc">
+                  Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое
+                  молоко, заменитель
+                  сахара и какао бобы.
+                </p>
+
+                <ul class="bar-types__details-list">
+
+                  <li class='bar-types__details-row'>
+                    <div class="bar-types__details-item">
+                      <p class="bar-types__details-item--indicator">Калорийность</p>
+                      <p class="bar-types__details-item--quantity">120 ккал</p>
+                    </div>
+
+                    <div class="bar-types__details-item">
+                      <p class="bar-types__details-item--indicator">Вес</p>
+                      <p class="bar-types__details-item--quantity">98 грамм</p>
+                    </div>
+                  </li>
+
+                  <li class="bar-types__details-row">
+                    <div class="bar-types__details-item">
+                      <p class="bar-types__details-item--price">140 ₽</p>
+                    </div>
+
+                    <div class="bar-types__details-item--order">
+                      <button type="button" class="button button-form-order">
+                        Заказать
+                      </button>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+        <img class="arrow arrow--right" src="./img/bg/arrow--right.png" alt="">
       </section>
 
       <section class="section team">
@@ -399,35 +461,35 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Имя</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="fullname">
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Телефон</div>
-                    <input placeholder="89022348912" type="text" class="form__input">
+                    <input placeholder="89022348912" type="text" class="form__input" name="phone">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Улица</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="street">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Дом</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="building">
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Корпус</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="construction">
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Квартира</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="apartment">
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Этаж</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="floor">
                   </label>
                 </div>
               </div>
@@ -435,34 +497,34 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Комментарий</div>
-                    <textarea class="form__input form__input--textarea"></textarea>
+                    <textarea class="form__input form__input--textarea" name="commentary"></textarea>
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__radio">
-                    <input type="radio" class="form__radio-default" name="form__button-name">
+                    <input type="radio" class="form__radio-default" name="change-radio">
                     <div class="form__radio-custom"></div>
                     <div class="form__radio-desc">Потребуется сдача</div>
                   </label>
 
                   <label class="form__radio">
-                    <input type="radio" class="form__radio-default" name="form__button-name" checked="checked">
+                    <input type="radio" class="form__radio-default" name="card-radio" checked="checked">
                     <div class="form__radio-custom"></div>
                     <div class="form__radio-desc">Оплата по карте</div>
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__checkbox">
-                    <input type="checkbox" class="form__checkbox-default" checked="checked">
+                    <input type="checkbox" class="form__checkbox-default" checked="checked" name="do-not-call-checkbox">
                     <div class="form__checkbox-custom"></div>
                     <div class="form__checkbox-desc">Не перезванивать</div>
                   </label>
                 </div>
                 <div class="form__row form__row--buttons">
-                  <button type="submit" class="button button-form-order">
+                  <button type="submit" class="button button-form-order" name="submit">
                     Заказать
                   </button>
-                  <button type="reset" class="button button-form-cancel">
+                  <button type="reset" class="button button-form-cancel" name="reset">
                     Очистить
                   </button>
                 </div>
@@ -565,7 +627,22 @@
     </main>
   </div>
 
+  <script>
+    const toggler = document.querySelector('#hamburger-button__toggler');
+    const hamburgermenu = document.querySelector('.hamburgermenu');
 
+    toggler.addEventListener('click', function () {
+
+      if (hamburgermenu.style.display == 'none') {
+        hamburgermenu.style.display = 'flex';
+      } else {
+        hamburgermenu.style.display = 'none';
+      }
+      // console.log('click on toggler');
+
+    });
+
+  </script>
 
 </body>
 

@@ -1,16 +1,12 @@
 .phone {
-  display: flex;
-  align-items: center;
-    margin-left: 1.4vw;
-
-  @include tablets(){
-    display:none;
-  }
+	display: flex;
+	align-items: center;
+	margin-left: 1.4vw;
 }
 
 .phone__symbol {
-  fill: #ffffff;
-  margin-right: rem(5px);
+	fill: #ffffff;
+	margin-right: rem(5px);
 }
 
 // .phone__symbol {
@@ -25,4 +21,8 @@
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
+
+	@include tablets() {
+		font-size: rem(40px);
+	}
 }

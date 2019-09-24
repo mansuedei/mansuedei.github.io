@@ -1,5 +1,6 @@
 .whyus {
-	position: relative;
+  position: relative;
+  
 	&:before {
 		content: "";
 		display: block;
@@ -8,7 +9,8 @@
 		width: 161px;
 		height: 315px;
 		top: 100%;
-		transform: translateY(rem(-200px));
+    transform: translateY(rem(-200px));
+    z-index: 1;
 		@include phones() {
 			display: none;
 		}
@@ -61,7 +63,7 @@
 
 	@include tablets() {
 		flex-direction: column;
-		width: 65vw;
+		width: 90vw;
 	}
 
 	@include phones() {
