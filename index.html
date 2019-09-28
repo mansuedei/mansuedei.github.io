@@ -15,8 +15,8 @@
     <main class="maincontent">
 
       <section class="section chocco">
-        <div class="chocco__background">
-        </div>
+        <!-- <div class="chocco__background">
+        </div> -->
         <div class="container container--chocco">
 
           <!-- header start -->
@@ -73,7 +73,7 @@
           <!-- header end -->
 
           <div class="chocco-content">
-            <img class="chocco__tablet-background" src="./img/bg/bg--chocco--tablet.png">
+            <!-- <img class="chocco__tablet-background" src="./img/bg/bg--chocco--tablet.png"> -->
             <div class="chocco-description">
               <h1 class="main-title main-title--chocco">
                 натуральные шоколадные батончики
@@ -206,17 +206,94 @@
       </section>
 
       <section class="bar-types">
-        <img class="arrow arrow--left" src="./img/bg/arrow--left.png" alt="">
         <div class="container container--bar-types">
+          <div class="arrow__container arrow__container--left"> <img class="arrow" src="./img/bg/arrow--left.png"
+              alt=""></div>
           <ul class="bar-types__list">
             <li class="bar-types__item">
-              <img class="bar-types__image" src="./img/content/ingredients--bars--seaweed.png" alt="">
+              <div class="bar-types__imagebox"> <img class="bar-types__image"
+                  src="./img/content/bar-types--seaweed-bar.png" alt=""></div>
               <div class="bar-types__textbox">
                 <div class="bar-types__ingredients">
                   <svg class="bar-types__bar-icon" width="51" ; height="51" ; viewBox="0 0 442.326 442.326">
                     <use xlink:href="./img/sprite/sprite.svg#bar-types__bar-icon"></use>
                   </svg>
                   Состав
+                  <div class="pop-up">
+                    <ul class="pop-up__list">
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#oat"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Овёс</div>
+                        <div class="pop-up__qty">25 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#seaweed"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Мор. водоросли</div>
+                        <div class="pop-up__qty">15 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#almond"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Миндаль</div>
+                        <div class="pop-up__qty">20 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#driedmilk"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Сухое молоко</div>
+                        <div class="pop-up__qty">10 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="pop-up__svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#pumpkin-seeds"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Тыкв. семечки</div>
+                        <div class="pop-up__qty">20 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#honeycomb"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Зам. сахара</div>
+                        <div class="pop-up__qty">4 г</div>
+                      </li>
+
+                      <li class="pop-up__item">
+                        <div class="pop-up__imagebox">
+                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                            <use xlink:href="./img/sprite/sprite.svg#cocoa-beans"> </use>
+                          </svg>
+                        </div>
+                        <div class="pop-up__desc">Какао бобы</div>
+                        <div class="pop-up__qty">4 г</div>
+                      </li>
+
+                    </ul>
+                  </div>
                 </div>
                 <h3 class="bar-types__headline">Батончик “Морские
                   водоросли”</h3>
@@ -239,26 +316,22 @@
                       <p class="bar-types__details-item--quantity">98 грамм</p>
                     </div>
                   </li>
-
-                  <li class="bar-types__details-row">
-                    <div class="bar-types__details-item">
-                      <p class="bar-types__details-item--price">140 ₽</p>
-                    </div>
-
-                    <div class="bar-types__details-item--order">
-                      <button type="button" class="button button-form-order">
-                        Заказать
-                      </button>
-                    </div>
-                  </li>
-
                 </ul>
+
+                <div class="bar-types__order">
+                  <p class="bar-types__order-price">140 ₽</p>
+                  <button type="button" class="button button-bar-types">
+                    Заказать
+                  </button>
+                </div>
+
               </div>
 
             </li>
           </ul>
+          <div class="arrow__container arrow__container--right"> <img class="arrow" src="./img/bg/arrow--right.png"
+              alt=""></div>
         </div>
-        <img class="arrow arrow--right" src="./img/bg/arrow--right.png" alt="">
       </section>
 
       <section class="section team">
@@ -271,7 +344,9 @@
 
               <li class="team-item">
                 <div class="team-item__hover">
-                  <img src="img/content/Boris-employee.png" alt="" class="team-item__member-pic">
+                  <div class="team-item__image-box">
+                    <img src="img/content/Boris-employee.png" alt="" class="team-item__member-pic">
+                  </div>
                   <h4 class="team-item__member-name">
                     Борис Федорович
                   </h4>
@@ -291,7 +366,9 @@
 
               <li class="team-item">
                 <div class="team-item__hover">
-                  <img src="img/content/Alla-employee.png" alt="" class="team-item__member-pic">
+                  <div class="team-item__image-box">
+                    <img src="img/content/Alla-employee.png" alt="" class="team-item__member-pic">
+                  </div>
                   <h4 class="team-item__member-name">
                     Алла Иванова
                   </h4>
@@ -311,7 +388,9 @@
 
               <li class="team-item">
                 <div class="team-item__hover">
-                  <img src="img/content/Kirill-employee.png" alt="" class="team-item__member-pic">
+                  <div class="team-item__image-box">
+                    <img src="img/content/Kirill-employee.png" alt="" class="team-item__member-pic">
+                  </div>
                   <h4 class="team-item__member-name">
                     Кирилл Матросов
                   </h4>
@@ -331,7 +410,9 @@
 
               <li class="team-item">
                 <div class="team-item__hover">
-                  <img src="img/content/Mila-employee.png" alt="" class="team-item__member-pic">
+                  <div class="team-item__image-box">
+                    <img src="img/content/Mila-employee.png" alt="" class="team-item__member-pic">
+                  </div>
                   <h4 class="team-item__member-name">
                     Мила Рыжкова
                   </h4>
@@ -502,13 +583,13 @@
                 </div>
                 <div class="form__row">
                   <label class="form__radio">
-                    <input type="radio" class="form__radio-default" name="change-radio">
+                    <input type="radio" class="form__radio-default" name="form__radio">
                     <div class="form__radio-custom"></div>
                     <div class="form__radio-desc">Потребуется сдача</div>
                   </label>
 
                   <label class="form__radio">
-                    <input type="radio" class="form__radio-default" name="card-radio" checked="checked">
+                    <input type="radio" class="form__radio-default" name="form__radio" checked="checked">
                     <div class="form__radio-custom"></div>
                     <div class="form__radio-desc">Оплата по карте</div>
                   </label>
@@ -537,60 +618,9 @@
 
       <section class="section map">
 
-        <img class="map__image" src="/img/content/map--map-image.png">
-
-        <footer class="footer">
-          <address class="contacts">
-            <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
-            <div class="contacts__phone">
-              <svg class="phone__symbol phone__symbol--footer" width="12" ; height="11" ; viewBox="0 0 12 11">
-                <use xlink:href="./img/sprite/sprite.svg#phone__symbol"></use>
-              </svg>
-              <div class="contacts__number"> 8 800 903 90 90</div>
-            </div>
-          </address>
-          <div class="socials">
-            <ul class="socials__list">
-
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <svg class="socials__link--icon" width="23" ; height="20" ; viewBox="0 0 36.7 36.7"
-                    style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
-                    <use xlink:href="./img/sprite/sprite.svg#socials__link--vk"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
-                    style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
-                    <use xlink:href="./img/sprite/sprite.svg#socials__link--fb"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
-                    style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
-                    <use xlink:href="./img/sprite/sprite.svg#socials__link--in"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
-                    style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
-                    <use xlink:href="./img/sprite/sprite.svg#socials__link--tw"></use>
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-          </div>
-        </footer>
+        <div class="map__image">
+          <img class="map__image" src="/img/content/map--map-image.png">
+        </div>
 
       </section>
 
@@ -625,23 +655,64 @@
       </ul>
 
     </main>
+
+    <footer class="footer">
+      <div class="container container--footer">
+        <address class="contacts">
+          <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
+          <div class="contacts__phone">
+            <svg class="phone__symbol phone__symbol--footer" width="12" ; height="11" ; viewBox="0 0 12 11">
+              <use xlink:href="./img/sprite/sprite.svg#phone__symbol"></use>
+            </svg>
+            <div class="contacts__number"> 8 800 903 90 90</div>
+          </div>
+        </address>
+        <div class="socials">
+          <ul class="socials__list">
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__link--icon" width="23" ; height="20" ; viewBox="0 0 36.7 36.7"
+                  style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
+                  <use xlink:href="./img/sprite/sprite.svg#socials__link--vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
+                  style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
+                  <use xlink:href="./img/sprite/sprite.svg#socials__link--fb"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
+                  style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
+                  <use xlink:href="./img/sprite/sprite.svg#socials__link--in"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg class="socials__link--icon" width="20" ; height="20" ; viewBox="0 0 36.7 36.7"
+                  style="enable-background:new 0 0 36.7 36.7;" xml:space="preserve">
+                  <use xlink:href="./img/sprite/sprite.svg#socials__link--tw"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <script>
-    const toggler = document.querySelector('#hamburger-button__toggler');
-    const hamburgermenu = document.querySelector('.hamburgermenu');
-
-    toggler.addEventListener('click', function () {
-
-      if (hamburgermenu.style.display == 'none') {
-        hamburgermenu.style.display = 'flex';
-      } else {
-        hamburgermenu.style.display = 'none';
-      }
-      // console.log('click on toggler');
-
-    });
-
+  <script src="./js/main.js">;
   </script>
 
 </body>

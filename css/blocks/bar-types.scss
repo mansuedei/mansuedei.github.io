@@ -2,53 +2,40 @@
 	background-color: $green-bg;
 	position: relative;
 	display: flex;
+	align-items: center;
+}
+
+.container--bar-types {
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
+}
 
-	@include tablets() {
-		// align-items: flex-start;
+.arrow__container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 10vw;
+
+	&--left {
+		justify-content: flex-start;
 	}
 
-	// &:before {
-	// 	content: "";
-	// 	display: block;
-	// 	position: absolute;
-	// 	background-image: url("../../img/bg/bar-types--background.png");
-	// 	width: 392px;
-	// 	height: 321px;
-	// 	top: 0%;
-	// 	transform: translate(52px,50px);
-	// z-index: 1;
-	// }
-
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		background-image: url("../../img/bg/bar-types--leaves.png");
-		width: 474px;
-		height: 328px;
-		top: 0%;
-		transform: translate(189px, 220px);
-		// z-index: 1;
+	&--right {
+		justify-content: flex-end;
 	}
 }
 
 .arrow {
+	z-index: 2;
+	top: 50%;
 	width: 13px;
 	height: 28px;
 
 	@include tablets() {
 		transform: translateY(-17vh);
 	}
-}
-
-.arrow--left {
-	margin-left: 50px;
-}
-
-.arrow--right {
-	margin-right: 50px;
 }
 
 // .container--bar-types {
@@ -68,19 +55,52 @@
 	}
 }
 
+.bar-types__imagebox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 50%;
+	height: auto;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin-right: 60px;
+
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	background-image: url('../../img/bg/bar-types--leaves.png');
+	// 	background-size: cover;
+	// 	width: 521px;
+	// 	height: 360px;
+	// 	top: 0%;
+	// 	left: 0%;
+	// 	transform: translateX(-140px);
+
+	// 	@include phones() {
+	// 		display: none;
+	// 	}
+	// }
+}
+
 .bar-types__image {
-  margin-right: 8vw;
-  
-  @include phones() {
-    max-width: 70%;
-    height: auto;
-  }
+	width: 100%;
+	height: auto;
+	display: block;
+
+	@include phones() {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .bar-types__textbox {
 	display: flex;
 	flex-direction: column;
 	z-index: 2;
+	flex-grow: 1;
+	flex-basis: 0;
 
 	@include tablets() {
 		text-align: center;
@@ -103,19 +123,22 @@
 	font-size: 14px;
 	font-weight: 900;
 	font-style: italic;
-  margin-bottom: 37px;
-  
-  @include tablets() {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(25px,25px);
-  }
+	margin-bottom: 37px;
+
+	&:hover .pop-up {
+		opacity: 1;
+	}
+
+	@include tablets() {
+		position: absolute;
+		top: 3%;
+		right: 1%;
+	}
 
 	&:before {
-		content: "";
+		content: '';
 		position: absolute;
-		background-image: url("../../img/bg/ingredients-bar.png") center center
+		background-image: url('../../img/bg/ingredients-bar.png') center center
 			no-repeat;
 		width: 51px;
 		height: 51px;
@@ -165,7 +188,28 @@
 	font-weight: 700;
 }
 
-.bar-types__details-item--price {
+.bar-types__order {
+	display: flex;
+	@include tablets() {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.bar-types__order-price {
 	font-size: 60px;
 	font-weight: 300;
+	margin-right: 35px;
+
+	@include tablets() {
+		margin-right: 15px;
+	}
+}
+
+.button-bar-types {
+	background: #0f5a47;
+	color: #ffffff;
+	margin-bottom: 0;
+	height: 55px;
+	// padding: 10px 30px;
 }

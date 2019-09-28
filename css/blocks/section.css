@@ -4,7 +4,7 @@ Error: Undefined mixin 'tablets'.
         from line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\section.scss
 
 1: .section {
-2: 	min-height: 100vh;
+2:   height: 100vh;
 3: 	position: relative;
 4: 
 5: 	@include tablets() {
@@ -63,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\section.scss, in `tablets'\A         from line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\section.scss\A \A 1: .section {\A 2: 	min-height: 100vh;\A 3: 	position: relative;\A 4: \A 5: 	@include tablets() {\A 6: 		height: auto;\A 7: 	}\A 8: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\section.scss, in `tablets'\A         from line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\section.scss\A \A 1: .section {\A 2:   height: 100vh;\A 3: 	position: relative;\A 4: \A 5: 	@include tablets() {\A 6: 		height: auto;\A 7: 	}\A 8: }"; }

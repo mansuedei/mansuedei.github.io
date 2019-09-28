@@ -1,6 +1,6 @@
 .contacts {
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
 	@include phones() {
 		align-items: center;
 		margin-bottom: rem(20px);

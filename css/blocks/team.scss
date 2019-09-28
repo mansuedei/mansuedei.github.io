@@ -1,31 +1,32 @@
 .team {
 	position: relative;
 	&:before {
-		content: "";
+		content: '';
 		position: absolute;
 		display: block;
-		background-image: url("../../img/bg/team--raspberry.png");
+		background-image: url('../../img/bg/team--raspberry.png');
 		width: 104px;
 		height: 114px;
 		top: 100%;
 		z-index: 1;
 	}
 	&:after {
-		content: "";
+		content: '';
 		position: absolute;
 		display: block;
-		background-image: url("../../img/bg/team--leaf-berries.png");
+		background-image: url('../../img/bg/team--leaf-berries.png');
 		width: rem(196px);
 		height: rem(578px);
 		top: 0%;
 		right: 0;
-		// z-index: -1;
+		z-index: 1;
 		transform: translateY(rem(-300px));
 	}
 }
 
 .team-headline {
-	margin-top: rem(73px);
+  margin-top: rem(73px);
+  z-index: 5;
 }
 
 .team-content {
@@ -37,8 +38,11 @@
 .team-list {
 	display: flex;
 	padding-inline-start: rem(0px);
-	flex-wrap: wrap;
 	justify-content: center;
+
+	@include tablets() {
+		flex-wrap: wrap;
+	}
 
 	//  @include tablets__team-list(){
 	//   width:699px;
@@ -54,19 +58,23 @@
 	text-align: center;
 	align-items: center;
 	width: 220px;
-	margin-right: 20px;
+  margin: 20px;
+  z-index: 5;
 
-	&:last-of-type {
-		margin-right: 0px;
-	}
+	// &:last-of-type {
+	// 	margin-right: 0px;
+	// }
 
 	@include tablets() {
-		margin-bottom: 30px;
+		// margin-bottom: 30px;
+		// &:nth-of-type(2) {
+		// 	margin-right: 0;
+		// }
 	}
 
 	@include phones() {
 		width: 160px;
-		margin-right: 0;
+		// margin: 0;
 	}
 }
 
@@ -77,7 +85,7 @@
 }
 
 .team-item__clickable:hover ~ .team-item__member-name:after {
-	content: "";
+	content: '';
 	width: 0;
 	height: 0;
 	border-right: rem(4px) solid transparent;
@@ -102,10 +110,21 @@
 	}
 }
 
-.team-item__member-pic {
-	display: block;
+.team-item__image-box {
 	width: rem(220px);
 	height: rem(288px);
+	margin-bottom: rem(40px);
+
+	@include phones() {
+		width: rem(120px);
+		height: rem(150px);
+	}
+}
+
+.team-item__member-pic {
+	display: block;
+	width: auto;
+	height: 100%;
 
 	@include phones() {
 		width: rem(144px);
@@ -114,7 +133,6 @@
 }
 
 .team-item__member-name {
-	margin-top: rem(24px);
 	color: $darkgrey-txt;
 	font-size: rem(21px);
 	font-weight: 500;
@@ -122,7 +140,7 @@
 	display: flex;
 
 	&:after {
-		content: "";
+		content: '';
 		width: 0;
 		height: 0;
 		border-right: rem(4px) solid transparent;

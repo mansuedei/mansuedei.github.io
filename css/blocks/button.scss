@@ -1,9 +1,14 @@
 .button {
-background: #ffffff;
-padding: rem(23px) rem(44px);
-border-radius: rem(40px);
-text-transform: uppercase;
-color: #0f5a47;
-font-weight: 900;
-font-size: rem(19px);
+	background: #ffffff;
+	padding: rem(17px) rem(30px);
+	border-radius: rem(40px);
+	text-transform: uppercase;
+	color: #0f5a47;
+	font-weight: 900;
+	font-size: rem(19px);
+
+	@include tablets() {
+    padding: rem(15px) rem(34px);
+    margin-bottom: rem(20px);
+	}
 }

@@ -9,7 +9,8 @@
 		width: 139px;
 		height: 321px;
 		top: 100%;
-		transform: translateY(rem(-119px));
+    transform: translateY(rem(-119px));
+    z-index: 1;
 	}
 	&:after {
 		content: "";
@@ -20,7 +21,11 @@
 		height: 86px;
 		bottom: 100%;
 		right: 0;
-		transform: translate(-4px, 110px);
+    transform: translate(-4px, 110px);
+    
+    // @include phones() {
+    //   display: none;
+    // }
 	}
 }
 

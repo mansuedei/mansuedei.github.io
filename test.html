@@ -5,18 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Test</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <svg 
-  width="50" 
-  height="100" 
-  viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="50"></circle>
-    <!-- <use xlink:href="./img/sprite/sprite.svg#phone"></use> -->
-  </svg>
+  <button id="loadButton">Download</button>
+
+  <div id="result"></div>
+
+  <script>
+    const loadButton = document.querySelector('#loadButton');
+    const result = document.querySelector('#result');
+
+    loadButton.addEventListener('click', () => {
+      const xhr = new XMLHttpRequest();
+
+      xhr.open('GET', 'content.txt');
+      xhr.send();
+      xhr.addEventListener('load'), () => {
+        console.log('response received');
+      };
+    });
+  </script>
 </body>
 
 </html>

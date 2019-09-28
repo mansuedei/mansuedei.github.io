@@ -1,11 +1,17 @@
 .footer {
 	background-color: #ffffff;
-	padding: rem(15px) rem(5px);
 	display: flex;
 	color: black;
-	align-items: center;
+	position: relative;
+}
+
+.container--footer {
+	flex-direction: row;
+	height: auto;
 	justify-content: space-between;
-	max-width: 90vw;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 	@include phones() {
 		flex-direction: column;

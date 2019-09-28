@@ -1,14 +1,24 @@
 .chocco {
 	background-color: $blue-bg;
+	background-image: url('../../img/bg/chocco--background-bars-leaves.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: right bottom;
 	display: flex;
 	position: relative;
-	padding-top: rem(24px);
-	padding-bottom: rem(50px);
+
+	@include tablets() {
+		background-image: url('../../img/bg/chocco--blue-leaves.png');
+		background-size: 70% auto;
+		background-position: right top;
+		padding-bottom: rem(20px);
+	}
+
 	&:before {
-		content: "";
+		content: '';
 		display: block;
 		position: absolute;
-		background-image: url("../../img/bg/chocco--leaf.png");
+		background-image: url('../../img/bg/chocco--leaf.png');
 		width: rem(59px);
 		height: rem(112px);
 		top: 100%;
@@ -20,52 +30,60 @@
 		}
 	}
 	&:after {
-		content: "";
+		content: '';
 		display: block;
 		position: absolute;
-		background-image: url("../../img/bg/chocco--berries&leaves.png");
-		width: rem(460px);
-		height: rem(341px);
+		background-image: url('../../img/bg/chocco--berries&leaves.png');
+		width: 460px;
+		height: 341px;
 		top: 100%;
 		right: 0%;
 		transform: translateY(rem(-296px));
-		z-index: -2;
+		z-index: 1;
 
 		@include tablets() {
-			display: none;
-		}
-	}
-}
-
-.chocco__background {
-	position: absolute;
-	background-image: url("../../img/bg/chocco--leaves.png");
-	width: rem(512px);
-	height: rem(648px);
-	bottom: 0%;
-	right: 0%;
-
-	@include tablets() {
-		top: 0%;
-	}
-
-	&:before {
-		content: "";
-		display: block;
-		position: absolute;
-		background-image: url("../../img/bg/chocco--bars.png");
-		width: rem(403px);
-		height: rem(419px);
-		top: 0%;
-		transform: translateY(rem(60px));
-		@include tablets() {
-			display: none;
+			background-image: url('../../img/bg/bg--chocco--tablet.png');
+			background-size: contain;
+			top: 32%;
+			width: 315px;
+			height: 322px;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 }
 
 .container--chocco {
+	padding-top: rem(24px);
+	padding-bottom: rem(24px);
 }
+
+// .chocco__background {
+// 	position: absolute;
+// 	background-image: url("../../img/bg/chocco--leaves.png");
+// 	width: rem(512px);
+// 	height: rem(648px);
+// 	bottom: 0%;
+// 	right: 0%;
+
+// 	@include tablets() {
+// 		top: 0%;
+// 	}
+
+// 	&:before {
+// 		content: "";
+// 		display: block;
+// 		position: absolute;
+// 		background-image: url("../../img/bg/chocco--bars.png");
+// 		width: rem(403px);
+// 		height: rem(419px);
+// 		top: 0%;
+// 		transform: translateY(rem(60px));
+// 		@include tablets() {
+// 			display: none;
+// 		}
+// 	}
+// }
 
 .chocco-content {
 	justify-content: center;
@@ -73,11 +91,11 @@
 	flex: 1;
 	align-items: flex-start;
 	flex-direction: column;
-  color: white;
-  
-  @include tablets() {
-    align-items: center;
-  }
+	color: white;
+
+	@include tablets() {
+		align-items: center;
+	}
 
 	@include phones() {
 		justify-content: flex-end;
@@ -87,7 +105,8 @@
 
 .chocco-description {
 	@include tablets() {
-    text-align: center;
+		text-align: center;
+		width: 70%;
 	}
 }
 
@@ -97,6 +116,7 @@
 	@include tablets() {
 		display: block;
 		margin-bottom: rem(20px);
+		height: 40vh;
 	}
 
 	@include phones() {
@@ -116,6 +136,7 @@
 	@include tablets() {
 		max-width: 100%;
 		letter-spacing: normal;
+		font-size: 50px;
 	}
 
 	@include phones() {
@@ -129,11 +150,14 @@
 	font-weight: 400px;
 	letter-spacing: 0.05em;
 	line-height: rem(26px);
+	max-width: 45%;
 	z-index: 2;
 
 	@include tablets() {
 		letter-spacing: normal;
 		font-size: 17px;
+		max-width: none;
+		margin-bottom: rem(20px);
 	}
 
 	@include phones() {

@@ -1,23 +1,22 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'
-        from line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss
+        on line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'
+        from line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss
 
-6: .advantages__list {
-7: 	display: flex;
-8: 	min-width: 68vw;
-9: 	flex-wrap: wrap;
-10: 
-11: 	@include tablets() {
-12: 		justify-content: center;
-13: 		width: 100vw;
-14: 	}
-15: 
-16: 	@include phones() {
+1: .advantages {
+2: 	color: #ffffff;
+3:   z-index: 2;
+4:   
+5:   @include tablets() {
+6:     padding-left: rem(15px);
+7:   }
+8: }
+9: 
+10: .advantages__list {
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:11:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:11
+C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:5:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'\A         from line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss\A \A 6: .advantages__list {\A 7: 	display: flex;\A 8: 	min-width: 68vw;\A 9: 	flex-wrap: wrap;\A 10: \A 11: 	@include tablets() {\A 12: 		justify-content: center;\A 13: 		width: 100vw;\A 14: 	}\A 15: \A 16: 	@include phones() {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss, in `tablets'\A         from line 5 of C:\Users\Yana\Desktop\Chocco\css\blocks\advantages.scss\A \A 1: .advantages {\A 2: 	color: #ffffff;\A 3:   z-index: 2;\A 4:   \A 5:   @include tablets() {\A 6:     padding-left: rem(15px);\A 7:   }\A 8: }\A 9: \A 10: .advantages__list {"; }

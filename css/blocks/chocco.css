@@ -4,11 +4,11 @@ Error: Undefined variable: "$blue-bg".
 
 1: .chocco {
 2: 	background-color: $blue-bg;
-3: 	display: flex;
-4: 	position: relative;
-5: 	padding-top: rem(24px);
-6: 	padding-bottom: rem(50px);
-7: 	&:before {
+3: 	background-image: url('../../img/bg/chocco--background-bars-leaves.png');
+4: 	background-repeat: no-repeat;
+5: 	background-size: auto 100%;
+6: 	background-position: right bottom;
+7: 	display: flex;
 
 Backtrace:
 C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss:2
@@ -58,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-bg\".\A         on line 2 of C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss\A \A 1: .chocco {\A 2: 	background-color: $blue-bg;\A 3: 	display: flex;\A 4: 	position: relative;\A 5: 	padding-top: rem(24px);\A 6: 	padding-bottom: rem(50px);\A 7: 	&:before {"; }
+  content: "Error: Undefined variable: \"$blue-bg\".\A         on line 2 of C:\Users\Yana\Desktop\Chocco\css\blocks\chocco.scss\A \A 1: .chocco {\A 2: 	background-color: $blue-bg;\A 3: 	background-image: url('../../img/bg/chocco--background-bars-leaves.png');\A 4: 	background-repeat: no-repeat;\A 5: 	background-size: auto 100%;\A 6: 	background-position: right bottom;\A 7: 	display: flex;"; }

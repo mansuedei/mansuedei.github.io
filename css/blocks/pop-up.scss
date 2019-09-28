@@ -1,0 +1,52 @@
+.pop-up {
+	position: absolute;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.95);
+	top: 0;
+	left: 100%;
+	border-radius: 5px;
+	width: 270px;
+	color: #333333;
+	font-style: normal;
+	text-transform: none;
+  font-size: 16px;
+  z-index: 20;
+  opacity: 0;
+  transition: 0.3s;
+
+  @include tablets() {
+    left: -270px;
+  }
+}
+
+.pop-up__list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.pop-up__item {
+	display: flex;
+	width: 100%;
+	justify-content: stretch;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.pop-up__imagebox {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.pop-up__desc {
+	width: 60%;
+	text-align: left;
+}
+
+.pop-up__qty {
+	width: 20%;
+	text-align: right;
+}

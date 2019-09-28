@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 40 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'
-        from line 40 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss
+        on line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'
+        from line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss
 
-35: }
-36: 
-37: .reviews-list {
-38: 	display: flex;
-39: 	flex-direction: column;
-40: 	@include tablets() {
-41: 		width: 70%;
-42: 	}
-43: 
-44: 	@include phones() {
-45: 		width: 90vw;
+40: }
+41: 
+42: .reviews-list {
+43: 	display: flex;
+44: 	flex-direction: column;
+45: 	@include tablets() {
+46: 		width: 70%;
+47: 	}
+48: 
+49: 	@include phones() {
+50: 		width: 90vw;
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:40:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:40
+C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:45:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:45
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 40 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'\A         from line 40 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss\A \A 35: }\A 36: \A 37: .reviews-list {\A 38: 	display: flex;\A 39: 	flex-direction: column;\A 40: 	@include tablets() {\A 41: 		width: 70%;\A 42: 	}\A 43: \A 44: 	@include phones() {\A 45: 		width: 90vw;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'\A         from line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss\A \A 40: }\A 41: \A 42: .reviews-list {\A 43: 	display: flex;\A 44: 	flex-direction: column;\A 45: 	@include tablets() {\A 46: 		width: 70%;\A 47: 	}\A 48: \A 49: 	@include phones() {\A 50: 		width: 90vw;"; }

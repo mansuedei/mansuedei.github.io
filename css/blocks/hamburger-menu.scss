@@ -17,13 +17,17 @@
 		// background-color: blue;
 		flex-direction: column;
 		justify-content: space-around;
-    align-items: center;
-    display: none;
+		align-items: center;
+		display: none;
 	}
 }
 
+.hamburgermenu--visible {
+	display: flex;
+}
+
 .hamburger-menu__logo {
-	font-family: "MuseoSansW01-500";
+	font-family: 'MuseoSansW01-500';
 	font-size: rem(24px);
 	font-weight: 400;
 	text-transform: uppercase;
