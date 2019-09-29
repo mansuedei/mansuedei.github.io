@@ -1,0 +1,27 @@
+.accordeon__title {
+	padding: 13px 26px;
+	font-size: 21px;
+	font-weight: 500;
+	color: $darkgrey-txt;
+  cursor: pointer;
+}
+
+.accordeon__content {
+	display: none;
+}
+
+.accordeon__content.show {
+	display: block !important;
+}
+
+.accordeon__content--title {
+	color: #281e1e;
+	font-size: 18px;
+	padding-top: 13px;
+	padding-bottom: 6px;
+}
+
+.accordeon__content--desc {
+	font-weight: 300;
+	color: $grey-txt;
+}

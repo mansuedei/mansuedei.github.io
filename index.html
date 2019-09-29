@@ -207,164 +207,345 @@
 
       <section class="bar-types">
         <div class="container container--bar-types">
-          <div class="arrow__container arrow__container--left"> <img class="arrow" src="./img/bg/arrow--left.png"
-              alt=""></div>
-          <ul class="bar-types__list">
-            <li class="bar-types__item">
-              <div class="bar-types__imagebox"> <img class="bar-types__image"
-                  src="./img/content/bar-types--seaweed-bar.png" alt=""></div>
-              <div class="bar-types__textbox">
-                <div class="bar-types__ingredients">
-                  <svg class="bar-types__bar-icon" width="51" ; height="51" ; viewBox="0 0 442.326 442.326">
-                    <use xlink:href="./img/sprite/sprite.svg#bar-types__bar-icon"></use>
-                  </svg>
-                  Состав
-                  <div class="pop-up">
-                    <ul class="pop-up__list">
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#oat"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Овёс</div>
-                        <div class="pop-up__qty">25 г</div>
-                      </li>
+          <a class="arrow__container arrow__container--left" id="arrowLeft" href="#">
+            <img class="arrow" src="./img/bg/arrow--left.png" alt="">
+          </a>
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#seaweed"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Мор. водоросли</div>
-                        <div class="pop-up__qty">15 г</div>
-                      </li>
+          <div class="bar-types__slider">
+            <div class="bar-types__list" id="sliderList">
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#almond"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Миндаль</div>
-                        <div class="pop-up__qty">20 г</div>
-                      </li>
+              <div class="bar-types__item">
+                <div class="bar-types__imagebox"> <img class="bar-types__image"
+                    src="./img/content/bar-types--seaweed-bar.png" alt=""></div>
+                <div class="bar-types__textbox">
+                  <div class="bar-types__ingredients">
+                    <svg class="bar-types__bar-icon" width="51" ; height="51" ; viewBox="0 0 442.326 442.326">
+                      <use xlink:href="./img/sprite/sprite.svg#bar-types__bar-icon"></use>
+                    </svg>
+                    Состав
+                    <div class="pop-up">
+                      <ul class="pop-up__list">
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#driedmilk"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Сухое молоко</div>
-                        <div class="pop-up__qty">10 г</div>
-                      </li>
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#oat"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Овёс</div>
+                          <div class="pop-up__qty">25 г</div>
+                        </li>
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="pop-up__svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#pumpkin-seeds"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Тыкв. семечки</div>
-                        <div class="pop-up__qty">20 г</div>
-                      </li>
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#seaweed"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Мор. водоросли</div>
+                          <div class="pop-up__qty">15 г</div>
+                        </li>
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#honeycomb"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Зам. сахара</div>
-                        <div class="pop-up__qty">4 г</div>
-                      </li>
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#almond"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Миндаль</div>
+                          <div class="pop-up__qty">20 г</div>
+                        </li>
 
-                      <li class="pop-up__item">
-                        <div class="pop-up__imagebox">
-                          <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
-                            <use xlink:href="./img/sprite/sprite.svg#cocoa-beans"> </use>
-                          </svg>
-                        </div>
-                        <div class="pop-up__desc">Какао бобы</div>
-                        <div class="pop-up__qty">4 г</div>
-                      </li>
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#driedmilk"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Сухое молоко</div>
+                          <div class="pop-up__qty">10 г</div>
+                        </li>
 
-                    </ul>
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="pop-up__svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#pumpkin-seeds"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Тыкв. семечки</div>
+                          <div class="pop-up__qty">20 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#honeycomb"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Зам. сахара</div>
+                          <div class="pop-up__qty">4 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#cocoa-beans"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Какао бобы</div>
+                          <div class="pop-up__qty">4 г</div>
+                        </li>
+
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <h3 class="bar-types__headline">Батончик “Морские
-                  водоросли”</h3>
-                <p class="bar-types__desc">
-                  Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое
-                  молоко, заменитель
-                  сахара и какао бобы.
-                </p>
+                  <h3 class="bar-types__headline">Батончик “Морские
+                    водоросли”</h3>
+                  <p class="bar-types__desc">
+                    Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое
+                    молоко, заменитель
+                    сахара и какао бобы.
+                  </p>
 
-                <ul class="bar-types__details-list">
+                  <ul class="bar-types__details-list">
 
-                  <li class='bar-types__details-row'>
-                    <div class="bar-types__details-item">
-                      <p class="bar-types__details-item--indicator">Калорийность</p>
-                      <p class="bar-types__details-item--quantity">120 ккал</p>
-                    </div>
+                    <li class='bar-types__details-row'>
+                      <div class="bar-types__details-item">
+                        <p class="bar-types__details-item--indicator">Калорийность</p>
+                        <p class="bar-types__details-item--quantity">120 ккал</p>
+                      </div>
 
-                    <div class="bar-types__details-item">
-                      <p class="bar-types__details-item--indicator">Вес</p>
-                      <p class="bar-types__details-item--quantity">98 грамм</p>
-                    </div>
-                  </li>
-                </ul>
+                      <div class="bar-types__details-item">
+                        <p class="bar-types__details-item--indicator">Вес</p>
+                        <p class="bar-types__details-item--quantity">98 грамм</p>
+                      </div>
+                    </li>
+                  </ul>
 
-                <div class="bar-types__order">
-                  <p class="bar-types__order-price">140 ₽</p>
-                  <button type="button" class="button button-bar-types">
-                    Заказать
-                  </button>
+                  <div class="bar-types__order">
+                    <p class="bar-types__order-price">140 ₽</p>
+                    <button type="button" class="button button-bar-types">
+                      Заказать
+                    </button>
+                  </div>
+
                 </div>
 
               </div>
 
-            </li>
-          </ul>
-          <div class="arrow__container arrow__container--right"> <img class="arrow" src="./img/bg/arrow--right.png"
-              alt=""></div>
+              <div class="bar-types__item">
+                <div class="bar-types__imagebox"> <img class="bar-types__image"
+                    src="./img/content/bar-types--grapes-bar.png" alt="">
+                </div>
+                <div class="bar-types__textbox">
+                  <div class="bar-types__ingredients">
+                    <svg class="bar-types__bar-icon" width="51" ; height="51" ; viewBox="0 0 442.326 442.326">
+                      <use xlink:href="./img/sprite/sprite.svg#bar-types__bar-icon"></use>
+                    </svg>
+                    Состав
+                    <div class="pop-up">
+                      <ul class="pop-up__list">
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#grapes"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Виноград</div>
+                          <div class="pop-up__qty">25 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#walnut"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Грецкий орех</div>
+                          <div class="pop-up__qty">32 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#almond"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Кунжутное семя</div>
+                          <div class="pop-up__qty">20 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#driedmilk"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Сухое молоко</div>
+                          <div class="pop-up__qty">10 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#honeycomb"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Зам. сахара</div>
+                          <div class="pop-up__qty">4 г</div>
+                        </li>
+
+                        <li class="pop-up__item">
+                          <div class="pop-up__imagebox">
+                            <svg class="bar-types__popup-svg" width="35" ; height="35" ; viewbox="0 0 105 105">
+                              <use xlink:href="./img/sprite/sprite.svg#cocoa-beans"> </use>
+                            </svg>
+                          </div>
+                          <div class="pop-up__desc">Какао бобы</div>
+                          <div class="pop-up__qty">4 г</div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <h3 class="bar-types__headline">Батончик “гранола виноград”</h3>
+                  <p class="bar-types__desc">
+                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
+                    заменитель сахара и какао
+                    бобы.
+                  </p>
+
+                  <ul class="bar-types__details-list">
+
+                    <li class='bar-types__details-row'>
+                      <div class="bar-types__details-item">
+                        <p class="bar-types__details-item--indicator">Калорийность</p>
+                        <p class="bar-types__details-item--quantity">110 ккал</p>
+                      </div>
+
+                      <div class="bar-types__details-item">
+                        <p class="bar-types__details-item--indicator">Вес</p>
+                        <p class="bar-types__details-item--quantity">95 грамм</p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="bar-types__order">
+                    <p class="bar-types__order-price">140 ₽</p>
+                    <button type="button" class="button button-bar-types">
+                      Заказать
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <a class="arrow__container arrow__container--right" id="arrowRight" href="#">
+            <img class="arrow" src="./img/bg/arrow--right.png" alt=""></a>
+
         </div>
       </section>
 
       <section class="section team">
         <div class="container container--team">
-          <div class="headline team-headline">
-            <h2 class="headline__title team-headline__title">Команда</h2>
-          </div>
-          <accordeon class="team-content">
-            <ul class="team-list">
+          <h2 class="headline__title headline__title--team">Команда</h2>
 
-              <li class="team-item">
-                <div class="team-item__hover">
-                  <div class="team-item__image-box">
-                    <img src="img/content/Boris-employee.png" alt="" class="team-item__member-pic">
-                  </div>
-                  <h4 class="team-item__member-name">
-                    Борис Федорович
-                  </h4>
-                </div>
-                <div class="team-item__accordeon team-item__accordeon--active">
-                  <h5 class="team-item__job-title">
+          <ul class="team__list">
+
+            <li class="team__item">
+
+              <div class="team__item--image-box">
+                <img src="img/content/Boris-employee.png" alt="" class="team-item--member-pic">
+              </div>
+
+              <div class="team__item--content-box">
+                <h4 class="accordeon__title">
+                  Борис Федорович
+                </h4>
+                <div class="accordeon__content">
+                  <h5 class="accordeon__content--title">
                     Главный технолог
                   </h5>
-                  <div class="team-item__job-responsibilities">
-                    <p>
-                      Отвечает за вкусовые качества
-                      и калорийность.
-                    </p>
-                  </div>
+                  <p class="accordeon__content--desc">
+                    Отвечает за вкусовые качества
+                    и калорийность.
+                  </p>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="team-item">
+            <li class="team__item">
+
+              <div class="team__item--image-box">
+                <img src="img/content/Alla-employee.png" alt="" class="team__item--member-pic">
+              </div>
+
+              <div class="team__item--content-box">
+                <h4 class="accordeon__title">
+                  Алла Иванова
+                </h4>
+                <div class="accordeon__content">
+                  <h5 class="accordeon__content--title">
+                    Специалист по упаковке
+                  </h5>
+                  <p class="accordeon__content--desc">
+                    Автор запоминающегося стиля
+                    наших батончиков.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="team__item">
+
+              <div class="team__item--image-box">
+                <img src="img/content/Kirill-employee.png" alt="" class="team-item--member-pic">
+              </div>
+
+              <div class="team__item--content-box">
+                <h4 class="accordeon__title">
+                  Кирилл Матросов
+                </h4>
+                <div class="accordeon__content">
+                  <h5 class="accordeon__content--title">
+                    Оператор
+                  </h5>
+                  <p class="accordeon__content--desc">
+                    С радостью поможет подобрать батончики и оформить заказ.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="team__item">
+
+              <div class="team__item--image-box">
+                <img src="img/content/Mila-employee.png" alt="" class="team-item--member-pic">
+              </div>
+
+              <div class="team__item--content-box">
+                <h4 class="accordeon__title">
+                  Мила Рыжкова
+                </h4>
+                <div class="accordeon__content">
+                  <h5 class="accordeon__content--title">
+                    PR, маркетинг
+                  </h5>
+                  <p class="accordeon__content--desc">
+                    По всем вопросам сотрудничества
+                    и рекламы писать только Миле.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="team-item">
                 <div class="team-item__hover">
                   <div class="team-item__image-box">
                     <img src="img/content/Alla-employee.png" alt="" class="team-item__member-pic">
@@ -428,10 +609,56 @@
                     </p>
                   </div>
                 </div>
-              </li>
+              </li> -->
 
-            </ul>
-          </accordeon>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section menu">
+        <div class="container container--menu">
+          <div class="headline__title headline__title--menu">
+            <div class="headline__title--menu-inside">Меню</div>
+          </div>
+          <div class="accordeon__menu accordeon__menu--milk">
+            <h5 class="accordeon__title accordeon__title--menu">Батончики с молоком</h5>
+            <div class="accordeon__content accordeon__content--menu">Рекомендуем употреблять батончики вместе с
+              кокосовым или миндальным молоком. Так и
+              вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно
+              питаться
+              полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+              никто. Надо
+              бы, кстати, бабулю поздравить с днём Победы.
+            </div>
+          </div>
+          <div class="accordeon__menu accordeon__menu--honey">
+            <h5 class="accordeon__title accordeon__title--menu">С мёдом и фруктами</h5>
+            <div class="accordeon__content accordeon__content--menu">Рекомендуем употреблять батончики вместе с
+              кокосовым или миндальным молоком. Так и
+              вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно
+              питаться
+              полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+              никто. Надо
+              бы, кстати, бабулю поздравить с днём Победы.
+            </div>
+          </div>
+          <div class="accordeon__menu accordeon__menu--berries">
+            <h5 class="accordeon__title accordeon__title--menu ">Дикие ягоды</h5>
+            <div class="accordeon__content accordeon__content--menu">Рекомендуем употреблять батончики вместе с
+              кокосовым или миндальным молоком. Так и
+              вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно
+              питаться
+              полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
+              никто. Надо
+              бы, кстати, бабулю поздравить с днём Победы.
+            </div>
+          </div>
+
+
         </div>
       </section>
 

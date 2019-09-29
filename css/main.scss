@@ -39,7 +39,12 @@ $darkgrey-txt: #323232;
 
 // team section blocks start
 @import 'blocks/team.scss';
+@import 'blocks/accordeon.scss';
 // team section blocks end
+
+//menu section blocks start
+@import 'blocks/menu.scss';
+//menu section blocks end
 
 // reviews section blocks start
 @import 'blocks/reviews.scss';

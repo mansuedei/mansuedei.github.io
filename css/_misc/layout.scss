@@ -54,10 +54,6 @@ body {
 	position: relative;
 	min-height: auto;
 
-	@include tablets() {
-		// height: auto;
-	}
-
 	@include phones() {
 	}
 }

@@ -1,5 +1,5 @@
 .team {
-	position: relative;
+	height: fit-content;
 	&:before {
 		content: '';
 		position: absolute;
@@ -9,6 +9,7 @@
 		height: 114px;
 		top: 100%;
 		z-index: 1;
+		transform: translateY(-68px);
 	}
 	&:after {
 		content: '';
@@ -24,150 +25,201 @@
 	}
 }
 
-.team-headline {
-  margin-top: rem(73px);
-  z-index: 5;
-}
-
-.team-content {
-	margin-top: rem(58px);
-	display: flex;
-	justify-content: center;
-}
-
-.team-list {
-	display: flex;
-	padding-inline-start: rem(0px);
+.container--team {
+	align-items: center;
 	justify-content: center;
 
+	@include tablets() {
+		height: auto;
+	}
+}
+
+.headline__title--team {
+	flex: 0.4;
+	margin-top: 74px;
+	margin-bottom: 58px;
+}
+
+.team__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	z-index: 5;
 	@include tablets() {
 		flex-wrap: wrap;
 	}
-
-	//  @include tablets__team-list(){
-	//   width:699px;
-	// }
-
-	@include phones() {
-	}
 }
 
-.team-item {
+.team__item {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	align-items: center;
 	width: 220px;
-  margin: 20px;
-  z-index: 5;
-
-	// &:last-of-type {
-	// 	margin-right: 0px;
-	// }
-
-	@include tablets() {
-		// margin-bottom: 30px;
-		// &:nth-of-type(2) {
-		// 	margin-right: 0;
-		// }
-	}
-
-	@include phones() {
-		width: 160px;
-		// margin: 0;
-	}
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-.team-item__clickable:hover ~ .team-item__accordeon {
+.team__item--image-box {
+	width: 220px;
+	height: 288px;
+}
+
+.team__item--member-pic {
 	height: 100%;
-	opacity: 1;
-	transition-duration: 0.3s;
+	width: auto;
 }
 
-.team-item__clickable:hover ~ .team-item__member-name:after {
-	content: '';
-	width: 0;
-	height: 0;
-	border-right: rem(4px) solid transparent;
-	border-left: rem(4px) solid transparent;
-	border-bottom: rem(5px) solid #0f5a47;
-	position: relative;
-	top: 55%;
-	left: 0.3em;
-	transition-duration: 0.3s;
-}
-
-.team-item__hover {
-	cursor: pointer;
+.team__item--content-box {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	&:hover + .team-item__accordeon {
-		opacity: 1;
-	}
-	&:hover .team-item__member-name:after {
-		transform: rotate(-180deg);
-	}
+	margin: 0 7px;
 }
 
-.team-item__image-box {
-	width: rem(220px);
-	height: rem(288px);
-	margin-bottom: rem(40px);
+// .team-headline {
+//   margin-top: rem(73px);
+//   z-index: 5;
+// }
 
-	@include phones() {
-		width: rem(120px);
-		height: rem(150px);
-	}
-}
+// .team-content {
+// 	margin-top: rem(58px);
+// 	display: flex;
+// 	justify-content: center;
+// }
 
-.team-item__member-pic {
-	display: block;
-	width: auto;
-	height: 100%;
+// .team-list {
+// 	display: flex;
+// 	padding-inline-start: rem(0px);
+// 	justify-content: center;
 
-	@include phones() {
-		width: rem(144px);
-		height: rem(185px);
-	}
-}
+// 	@include tablets() {
+// 		flex-wrap: wrap;
+// 	}
 
-.team-item__member-name {
-	color: $darkgrey-txt;
-	font-size: rem(21px);
-	font-weight: 500;
-	position: relative;
-	display: flex;
+// 	//  @include tablets__team-list(){
+// 	//   width:699px;
+// 	// }
 
-	&:after {
-		content: '';
-		width: 0;
-		height: 0;
-		border-right: rem(4px) solid transparent;
-		border-left: rem(4px) solid transparent;
-		border-top: rem(5px) solid #0f5a47;
-		position: relative;
-		top: 0.5em;
-		left: 0.3em;
-		transition: 0.3s;
-	}
-}
+// 	@include phones() {
+// 	}
+// }
 
-.team-item__accordeon {
-	overflow: hidden;
-	opacity: 0;
-	transition: 0.3s;
-	height: 0;
-}
+// .team-item {
+// 	display: flex;
+// 	flex-direction: column;
+// 	text-align: center;
+// 	align-items: center;
+// 	width: 220px;
+//   margin: 20px;
+//   z-index: 5;
 
-.team-item__job-title {
-	color: #281e1e;
-	margin-top: rem(17px);
-	font-size: rem(18px);
-}
+// 	// &:last-of-type {
+// 	// 	margin-right: 0px;
+// 	// }
 
-.team-item__job-responsibilities {
-	color: $grey-txt;
-	font-weight: 300;
-	margin-top: rem(8px);
-}
+// 	@include tablets() {
+// 		// margin-bottom: 30px;
+// 		// &:nth-of-type(2) {
+// 		// 	margin-right: 0;
+// 		// }
+// 	}
+
+// 	@include phones() {
+// 		width: 160px;
+// 		// margin: 0;
+// 	}
+// }
+
+// .team-item__clickable:hover ~ .team-item__accordeon {
+// 	height: 100%;
+// 	opacity: 1;
+// 	transition-duration: 0.3s;
+// }
+
+// .team-item__clickable:hover ~ .team-item__member-name:after {
+// 	content: '';
+// 	width: 0;
+// 	height: 0;
+// 	border-right: rem(4px) solid transparent;
+// 	border-left: rem(4px) solid transparent;
+// 	border-bottom: rem(5px) solid #0f5a47;
+// 	position: relative;
+// 	top: 55%;
+// 	left: 0.3em;
+// 	transition-duration: 0.3s;
+// }
+
+// .team-item__hover {
+// 	cursor: pointer;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	&:hover + .team-item__accordeon {
+// 		opacity: 1;
+// 	}
+// 	&:hover .team-item__member-name:after {
+// 		transform: rotate(-180deg);
+// 	}
+// }
+
+// .team-item__image-box {
+// 	width: rem(220px);
+// 	height: rem(288px);
+// 	margin-bottom: rem(40px);
+
+// 	@include phones() {
+// 		width: rem(120px);
+// 		height: rem(150px);
+// 	}
+// }
+
+// .team-item__member-pic {
+// 	display: block;
+// 	width: auto;
+// 	height: 100%;
+
+// 	@include phones() {
+// 		width: rem(144px);
+// 		height: rem(185px);
+// 	}
+// }
+
+// .team-item__member-name {
+// 	color: $darkgrey-txt;
+// 	font-size: rem(21px);
+// 	font-weight: 500;
+// 	position: relative;
+// 	display: flex;
+
+// 	&:after {
+// 		content: '';
+// 		width: 0;
+// 		height: 0;
+// 		border-right: rem(4px) solid transparent;
+// 		border-left: rem(4px) solid transparent;
+// 		border-top: rem(5px) solid #0f5a47;
+// 		position: relative;
+// 		top: 0.5em;
+// 		left: 0.3em;
+// 		transition: 0.3s;
+// 	}
+// }
+
+// .team-item__accordeon {
+// 	overflow: hidden;
+// 	opacity: 1;
+// 	transition: 0.3s;
+// 	height: auto;
+// }
+
+// .team-item__job-title {
+// 	color: #281e1e;
+// 	margin-top: rem(17px);
+// 	font-size: rem(18px);
+// }
+
+// .team-item__job-responsibilities {
+// 	color: $grey-txt;
+// 	font-weight: 300;
+// 	margin-top: rem(8px);
+// }

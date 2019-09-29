@@ -1,11 +1,6 @@
-var firstName = "Sergei";
+const obj = {
+	name: "Sergey",
+	lastName: "Petrov",
+};
 
-if (firstName == "Sergey") {
-	console.log("yes");
-} else {
-	console.log("no");
-}
-
-for (var i = 0; i < 3; i++) {
-	console.log(i);
-}
+const friends = 
