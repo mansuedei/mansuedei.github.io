@@ -1,6 +1,5 @@
 .section {
-  min-height: 100vh;
-  max-height: fit-content;
+  height: 100vh;
   position: relative; }
 
 /*# sourceMappingURL=section.css.map */

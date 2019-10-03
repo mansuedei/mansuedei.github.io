@@ -1,22 +1,22 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss, in `tablets'
-        from line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss
+        on line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss, in `tablets'
+        from line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss
 
-5: 	text-transform: uppercase;
 6: 	color: #0f5a47;
 7: 	font-weight: 900;
 8: 	font-size: rem(19px);
-9: 
-10: 	@include tablets() {
-11:     padding: rem(15px) rem(34px);
-12:     margin-bottom: rem(20px);
-13: 	}
-14: }
+9: 	cursor: pointer;
+10: 
+11: 	@include tablets() {
+12: 		padding: rem(15px) rem(34px);
+13: 		margin-bottom: rem(20px);
+14: 	}
+15: }
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss:10:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss:10
+C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss:11:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss:11
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss, in `tablets'\A         from line 10 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss\A \A 5: 	text-transform: uppercase;\A 6: 	color: #0f5a47;\A 7: 	font-weight: 900;\A 8: 	font-size: rem(19px);\A 9: \A 10: 	@include tablets() {\A 11:     padding: rem(15px) rem(34px);\A 12:     margin-bottom: rem(20px);\A 13: 	}\A 14: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss, in `tablets'\A         from line 11 of C:\Users\Yana\Desktop\Chocco\css\blocks\button.scss\A \A 6: 	color: #0f5a47;\A 7: 	font-weight: 900;\A 8: 	font-size: rem(19px);\A 9: 	cursor: pointer;\A 10: \A 11: 	@include tablets() {\A 12: 		padding: rem(15px) rem(34px);\A 13: 		margin-bottom: rem(20px);\A 14: 	}\A 15: }"; }

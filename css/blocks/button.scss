@@ -6,9 +6,10 @@
 	color: #0f5a47;
 	font-weight: 900;
 	font-size: rem(19px);
+	cursor: pointer;
 
 	@include tablets() {
-    padding: rem(15px) rem(34px);
-    margin-bottom: rem(20px);
+		padding: rem(15px) rem(34px);
+		margin-bottom: rem(20px);
 	}
 }

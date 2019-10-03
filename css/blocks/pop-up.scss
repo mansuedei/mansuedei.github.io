@@ -9,14 +9,20 @@
 	color: #333333;
 	font-style: normal;
 	text-transform: none;
-  font-size: 16px;
-  z-index: 20;
-  opacity: 0;
-  transition: 0.3s;
+	font-size: 16px;
+	z-index: 20;
+	opacity: 0;
+	transition: 0.3s;
 
-  @include tablets() {
-    left: -270px;
-  }
+	@include tablets() {
+		left: -270px;
+	}
+
+	@include phones() {
+		left: 50%;
+		transform: translateX(-130%);
+		width: auto;
+	}
 }
 
 .pop-up__list {
@@ -31,14 +37,18 @@
 	justify-content: stretch;
 	align-items: center;
 	padding: 10px 20px;
+
+	@include phones() {
+		font-size: 12px;
+	}
 }
 
 .pop-up__imagebox {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
 }
 
 .pop-up__desc {

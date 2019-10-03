@@ -340,4 +340,17 @@ C11,8.969,10.875,9.516,10.758,9.774z"/>
 </g>
 </symbol>
 
+
+<symbol id="triangle">
+<!-- <g transform="scale(0.05)"> -->
+   <!-- <polygon points="250,60 100,300 400,300"> -->
+   <polygon points="100,60 400,60 250,300">
+<!-- </g> -->
+</symbol>
+
+<symbol id="close__svg">
+<line x1="10" y1="10" x2="100" y2="100" stroke="red" stroke-width="10" />
+<line x1="100" y1="10" x2="10" y2="100" stroke="red" stroke-width="10" />
+</symbol>
+
 </svg>

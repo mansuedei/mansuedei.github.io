@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 32 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'
-        from line 32 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss
+        on line 31 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'
+        from line 31 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss
 
-27: 
-28: .container--team {
-29: 	align-items: center;
-30: 	justify-content: center;
-31: 
-32: 	@include tablets() {
-33: 		height: auto;
-34: 	}
-35: }
-36: 
-37: .headline__title--team {
+26: 
+27: .container--team {
+28: 	align-items: center;
+29: 	justify-content: center;
+30: 
+31: 	@include tablets() {
+32: 	}
+33: }
+34: 
+35: .headline__title--team {
+36: 	margin-bottom: 58px;
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:32:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:32
+C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:31:in `tablets'
+C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss:31
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 32 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'\A         from line 32 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss\A \A 27: \A 28: .container--team {\A 29: 	align-items: center;\A 30: 	justify-content: center;\A 31: \A 32: 	@include tablets() {\A 33: 		height: auto;\A 34: 	}\A 35: }\A 36: \A 37: .headline__title--team {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 31 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss, in `tablets'\A         from line 31 of C:\Users\Yana\Desktop\Chocco\css\blocks\team.scss\A \A 26: \A 27: .container--team {\A 28: 	align-items: center;\A 29: 	justify-content: center;\A 30: \A 31: 	@include tablets() {\A 32: 	}\A 33: }\A 34: \A 35: .headline__title--team {\A 36: 	margin-bottom: 58px;"; }

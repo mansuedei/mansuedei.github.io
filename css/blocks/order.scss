@@ -1,11 +1,59 @@
 .order {
-	background: #cfdeda url("../../img/bg/order--pattern.png") center center /
+	background: #cfdeda url('../../img/bg/order--pattern.png') center center /
 		cover no-repeat;
 	color: $green-txt;
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		background-image: url('../../img/bg/form__leaves.png');
+		width: 242px;
+		height: 264px;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		transform: translateY(-150px);
+
+		@include phones() {
+			transform: scale(0.5) translate(160px,-260px);
+		}
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		background-image: url('../../img/bg/form__berrie.png');
+		width: 47px;
+		height: 48px;
+		bottom: 0;
+		left: 0;
+		z-index: 100;
+		transform: translate(20px, -70px);
+
+		@include tablets() {
+			display: none;
+		}
+	}
 }
 
 .container--order {
-	// padding-bottom: rem(66px);
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		background-image: url('../../img/bg/form__leaf.png');
+		width: 135px;
+		height: 188px;
+		bottom: 0;
+		right: 0;
+		z-index: 100;
+		transform: translateY(-50px);
+
+		@include tablets() {
+			display: none;
+		}
+	}
 }
 
 .headline__title--order {

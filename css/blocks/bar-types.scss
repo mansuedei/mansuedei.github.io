@@ -9,21 +9,41 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .arrow__container {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	position: relative;
-	width: 70px;
+	position: absolute;
+	// width: 70px;
 
 	&--left {
-		justify-content: flex-start;
+		left: 0;
+
+		@include tablets() {
+			left: 10%;
+		}
+
+		@include phones() {
+			left: 0;
+		}
 	}
 
 	&--right {
-		justify-content: flex-end;
+		left: 100%;
+		// transform: translateX(-13px);
+
+		@include tablets() {
+			left: 90%;
+			transform: none;
+		}
+
+		@include phones() {
+			left: 100%;
+			transform: translateX(-13px);
+		}
 	}
 }
 
@@ -39,14 +59,17 @@
 }
 
 .bar-types__slider {
-	display: flex;
-  overflow: hidden;
-  width: 800px;
+	// display: flex;
+	overflow: hidden;
+	height: 100%;
+	// width: 800px;
 }
 
 .bar-types__list {
 	display: flex;
 	position: relative;
+	height: 100%;
+	// width: 1600px;
 
 	@include tablets() {
 		// width: 80vw;
@@ -55,15 +78,22 @@
 
 .bar-types__item {
 	display: flex;
-  align-items: center;
-  width: 800px;
-  align-items: flex-start;
-  justify-content: flex-start;
+	align-items: center;
+	// width: 800px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex: 0 0 100%;
+	align-items: center;
+	padding: 70px 0;
 
 	@include tablets() {
 		flex-direction: column;
 		// width: 80vw;
 		// margin-right: 20vw;
+	}
+
+	@include phones() {
+		width: 95vw;
 	}
 }
 
@@ -72,14 +102,21 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	width: 50%;
-	height: 100%;
-	flex-grow: 1;
-	flex-basis: 0;
+	// width: 50%;
+	// height: 100%;
+	// flex-grow: 1;
+	// flex-basis: 0;
 	margin-right: 60px;
 
 	@include tablets() {
-		margin-right: 0;
+		margin-right: unset;
+		// height: 50%;
+	}
+
+	@include phones() {
+    width: 80%;
+    margin-top: 5vh;
+		// margin-right: auto;
 	}
 
 	// &:after {
@@ -114,14 +151,16 @@
 .bar-types__textbox {
 	display: flex;
 	flex-direction: column;
-	z-index: 2;
-	flex-grow: 1;
-	flex-basis: 0;
+  z-index: 2;
+  width: 40%;
+	// flex-grow: 1;
+	// flex-basis: 0;
 
 	@include tablets() {
-		text-align: center;
-		width: 70vw;
-	}
+    text-align: center;
+    width: auto;
+		// width: 70vw;
+  }
 }
 
 .bar-types__ingredients {
@@ -151,6 +190,11 @@
 		right: 1%;
 	}
 
+	@include phones() {
+		margin-bottom: 0;
+		top: 1%;
+	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -172,12 +216,20 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 22px;
+
+	@include tablets() {
+		padding: 0px 100px;
+	}
 }
 
 .bar-types__desc {
 	color: $grey-txt;
 	font-weight: 400;
 	margin-bottom: 47px;
+
+	@include tablets() {
+		padding: 0px 50px;
+	}
 }
 
 .bar-types__details-list {

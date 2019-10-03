@@ -1,28 +1,39 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'
-        from line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss
+Error: Undefined mixin 'phones'.
+        on line 15 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `phones'
+        from line 15 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss
 
-40: }
-41: 
-42: .reviews-list {
-43: 	display: flex;
-44: 	flex-direction: column;
-45: 	@include tablets() {
-46: 		width: 70%;
-47: 	}
-48: 
-49: 	@include phones() {
-50: 		width: 90vw;
+10: 		height: 321px;
+11: 		top: 100%;
+12: 		transform: translateY(rem(-119px));
+13:     z-index: 1;
+14:     
+15:     @include phones() {
+16:       display: none;
+17:     }
+18: 	}
+19: 	&:after {
+20: 		content: '';
 
 Backtrace:
-C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:45:in `tablets'
-C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:45
+C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:15:in `phones'
+C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `tablets'\A         from line 45 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss\A \A 40: }\A 41: \A 42: .reviews-list {\A 43: 	display: flex;\A 44: 	flex-direction: column;\A 45: 	@include tablets() {\A 46: 		width: 70%;\A 47: 	}\A 48: \A 49: 	@include phones() {\A 50: 		width: 90vw;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 15 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss, in `phones'\A         from line 15 of C:\Users\Yana\Desktop\Chocco\css\blocks\reviews.scss\A \A 10: 		height: 321px;\A 11: 		top: 100%;\A 12: 		transform: translateY(rem(-119px));\A 13:     z-index: 1;\A 14:     \A 15:     @include phones() {\A 16:       display: none;\A 17:     }\A 18: 	}\A 19: 	&:after {\A 20: 		content: '';"; }

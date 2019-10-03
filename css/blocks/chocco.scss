@@ -5,7 +5,8 @@
 	background-size: auto 100%;
 	background-position: right bottom;
 	display: flex;
-	position: relative;
+  position: relative;
+  width:100%;
 
 	@include tablets() {
 		background-image: url('../../img/bg/chocco--blue-leaves.png');

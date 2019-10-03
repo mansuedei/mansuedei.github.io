@@ -3,14 +3,14 @@ Error: Undefined variable: "$green-txt".
         on line 4 of C:\Users\Yana\Desktop\Chocco\css\blocks\order.scss
 
 1: .order {
-2: 	background: #cfdeda url("../../img/bg/order--pattern.png") center center /
+2: 	background: #cfdeda url('../../img/bg/order--pattern.png') center center /
 3: 		cover no-repeat;
 4: 	color: $green-txt;
-5: }
-6: 
-7: .container--order {
-8: 	// padding-bottom: rem(66px);
-9: }
+5: 	&:before {
+6: 		content: '';
+7: 		position: absolute;
+8: 		display: block;
+9: 		background-image: url('../../img/bg/form__leaves.png');
 
 Backtrace:
 C:\Users\Yana\Desktop\Chocco\css\blocks\order.scss:4
@@ -60,4 +60,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green-txt\".\A         on line 4 of C:\Users\Yana\Desktop\Chocco\css\blocks\order.scss\A \A 1: .order {\A 2: 	background: #cfdeda url(\"../../img/bg/order--pattern.png\") center center /\A 3: 		cover no-repeat;\A 4: 	color: $green-txt;\A 5: }\A 6: \A 7: .container--order {\A 8: 	// padding-bottom: rem(66px);\A 9: }"; }
+  content: "Error: Undefined variable: \"$green-txt\".\A         on line 4 of C:\Users\Yana\Desktop\Chocco\css\blocks\order.scss\A \A 1: .order {\A 2: 	background: #cfdeda url('../../img/bg/order--pattern.png') center center /\A 3: 		cover no-repeat;\A 4: 	color: $green-txt;\A 5: 	&:before {\A 6: 		content: '';\A 7: 		position: absolute;\A 8: 		display: block;\A 9: 		background-image: url('../../img/bg/form__leaves.png');"; }

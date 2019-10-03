@@ -1,27 +1,59 @@
 .accordeon__title {
-	padding: 13px 26px;
 	font-size: 21px;
 	font-weight: 500;
 	color: $darkgrey-txt;
-  cursor: pointer;
+	cursor: pointer;
+	margin-bottom: 13px;
+	position: relative;
+
+	@include phones() {
+		font-size: 16px;
+	}
+}
+
+.accordeon__title.active {
+	.accordeon__svg {
+		transform: rotate(-180deg);
+		transform-origin: 70% 50%;
+	}
 }
 
 .accordeon__content {
+	margin-top: 13px;
 	display: none;
 }
 
 .accordeon__content.show {
 	display: block !important;
+	margin-bottom: 13px;
+
+	@include phones() {
+		// width: 80vw;
+	}
 }
 
 .accordeon__content--title {
 	color: #281e1e;
 	font-size: 18px;
-	padding-top: 13px;
 	padding-bottom: 6px;
+
+	@include phones() {
+		font-size: 14px;
+	}
 }
 
 .accordeon__content--desc {
 	font-weight: 300;
-	color: $grey-txt;
+	font-size: 18px;
+  color: $grey-txt;
+  
+	@include phones() {
+		font-size: 14px;
+	}
+}
+
+.accordeon__svg {
+	position: absolute;
+	fill: $green-txt;
+	top: 0.3em;
 }

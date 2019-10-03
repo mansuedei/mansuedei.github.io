@@ -1,5 +1,4 @@
 // hamburger menu start
-
 hamburgerMenu(
 	'#hamburger-button__toggler',
 	'.hamburgermenu',
@@ -15,24 +14,41 @@ function hamburgerMenu(togglerSelector, menuSelector, toggleClass) {
 		hamburgerClasses.toggle(toggleClass);
 	});
 }
-
 // hamburger menu end
 
 // accordeon start
-var accordeonTitles = document.getElementsByClassName('accordeon__title');
-var accordeonContents = document.getElementsByClassName('accordeon__content');
+accordeon('accordeon__title', 'accordeon__content');
+accordeon('accordeon__menu', 'accordeon__content', 'close__svg');
 
-for (var i = 0; i < accordeonTitles.length; i++) {
-	accordeonTitles[i].onclick = function() {
-		var setClasses = !this.classList.contains('active');
-		setClass(accordeonTitles, 'active', 'remove');
-		setClass(accordeonContents, 'show', 'remove');
+function accordeon(triggerSelector, contentSelector, closeSelector) {
+	var accordeonTitles = document.getElementsByClassName(triggerSelector);
+	var accordeonContents = document.getElementsByClassName(contentSelector);
 
-		if (setClasses) {
-			this.classList.toggle('active');
-			this.nextElementSibling.classList.toggle('show');
+	for (var i = 0; i < accordeonTitles.length; i++) {
+		accordeonTitles[i].onclick = function() {
+			var setClasses = !this.classList.contains('active');
+			setClass(accordeonTitles, 'active', 'remove');
+			setClass(accordeonContents, 'show', 'remove');
+			if (setClasses) {
+				this.classList.toggle('active');
+				this.childNodes[3].classList.toggle('show');
+			}
+		};
+
+		if (closeSelector) {
+			var closeButton = document.getElementsByClassName(closeSelector);
+
+			closeButton[i].onclick = function() {
+				var setClasses = !this.classList.contains('active');
+				setClass(accordeonTitles, 'remove', 'active');
+				setClass(accordeonContents, 'remove', 'show');
+				if (setClasses) {
+					this.classList.toggle('active');
+					this.childNodes[3].classList.toggle('show');
+				}
+			};
 		}
-	};
+	}
 }
 
 function setClass(els, className, fnName) {
@@ -40,6 +56,7 @@ function setClass(els, className, fnName) {
 		els[i].classList[fnName](className);
 	}
 }
+// accordeon end
 
 //slider start
 const arrowLeft = document.querySelector('#arrowLeft');
@@ -79,12 +96,6 @@ sendButton.addEventListener('click', function(event) {
 		let overlay;
 		const URL = 'https://webdev-api.loftschool.com/sendmail';
 		const URL_FAIL = 'https://webdev-api.loftschool.com/sendmail/fail';
-		const data = {
-			name: myForm.elements.name.value,
-			phone: myForm.elements.phone.value,
-			comment: myForm.elements.comment.value,
-			to: myForm.elements.to.value,
-		};
 
 		const xhr = new XMLHttpRequest();
 		xhr.responseType = 'json';
@@ -92,15 +103,7 @@ sendButton.addEventListener('click', function(event) {
 		xhr.open('POST', URL);
 		xhr.send(new FormData(myForm));
 		xhr.addEventListener('load', res => {
-			if (xhr.response.status) {
-				overlay = createOverlay(
-					'Ваш заказ принят. Спасибо, что выбрали CHOCCO!'
-				);
-			} else {
-				overlay = createOverlay(
-					'К сожалению, при отправке заказа произошла ошибка. Пожалуйста, попробуйте еще раз. Спасибо!'
-				);
-			}
+			overlay = createOverlay(xhr.response.message);
 
 			document.body.appendChild(overlay);
 		});
@@ -139,19 +142,18 @@ function validateField(field) {
 		return true;
 	}
 }
-
 //form end
 
 //overlay start
-
 function createOverlay(content) {
 	const overlayElement = document.createElement('div');
 	overlayElement.classList.add('overlay');
 
-	const template = document.querySelector('#formOverlay');
-	overlayElement.innerHTML = template.innerHTML;
+  const template = document.querySelector('#formOverlay');
+  overlayElement.innerHTML = template.innerHTML;
 
-	const closeElement = overlayElement.querySelector('.overlay__close');
+  const closeElement = overlayElement.querySelector('.button.overlay__button');
+
 	closeElement.addEventListener('click', function() {
 		document.body.removeChild(overlayElement);
 	});
@@ -161,5 +163,23 @@ function createOverlay(content) {
 
 	return overlayElement;
 }
+//overlay end
 
-//overlay window end
+//tabs start
+function openReview(evt, reviewName) {
+  if (!evt.currentTarget.classList.contains('active')) {
+		let reviewItems = document.getElementsByClassName('reviews-item');
+		let reviewButtons = document.getElementsByClassName(
+			'reviews-buttons__item'
+		);
+
+		for (let i = 0; i < reviewItems.length; i++) {
+			reviewItems[i].classList.remove('active');
+			reviewButtons[i].classList.remove('active');
+		}
+
+		document.getElementById(reviewName).classList.add('active');
+		evt.currentTarget.classList.add('active');
+	} 
+}
+//tabs end
