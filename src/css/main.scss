@@ -1,0 +1,15 @@
+$blue-bg: #61c4d9;
+$cyan-ic: #b0f7ff;
+$grey-bg: #f2f5f4;
+$green-bg: #f8faf9;
+$green-txt: #0f5a47;
+$grey-txt: #666666;
+$black-txt: #0d0d0d;
+$darkgrey-txt: #323232;
+
+@import '_misc/mixins.scss';
+@import '_misc/fonts.scss';
+@import '_misc/layout.scss';
+@import '_misc/media.scss';
+
+@import 'blocks/*.scss';
