@@ -14,6 +14,7 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
+const MobileDetect = require('mobile-detect');
 
 const env = process.env.NODE_ENV;
 
@@ -33,6 +34,12 @@ task('copy:html', () => {
 task('copy:img', () => {
 	return src('src/img/**/*.{jpg,png}')
 		.pipe(dest('dist/img'))
+		.pipe(reload({stream: true}));
+});
+
+task('copy:vid', () => {
+	return src('src/vid/**/*.*')
+		.pipe(dest('dist/vid'))
 		.pipe(reload({stream: true}));
 });
 
@@ -70,11 +77,14 @@ task('scripts', () => {
 		.pipe(sourcemaps.init())
 		.pipe(concat('main.min.js', {newLine: ';'}))
 		.pipe(
-			babel({
-				presets: ['@babel/env'],
-			})
+			gulpif(
+				env === 'prod',
+				babel({
+					presets: ['@babel/env'],
+				})
+			)
 		)
-		.pipe(uglify())
+		.pipe(gulpif(env === 'prod', uglify()))
 		.pipe(sourcemaps.write())
 		.pipe(dest('dist'))
 		.pipe(reload({stream: true}));
@@ -108,7 +118,7 @@ task('server', () => {
 });
 
 task('watch', () => {
-	watch('./src/css/**.scss', series('styles'));
+	watch('./src/css/**/*.scss', series('styles'));
 	watch('./src/*.html', series('copy:html'));
 	watch('./src/js/*.js', series('scripts'));
 });
@@ -117,7 +127,7 @@ task(
 	'default',
 	series(
 		'clean',
-		parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons'),
+		parallel('copy:html', 'copy:img', 'copy:vid', 'styles', 'scripts', 'icons'),
 		parallel('watch', 'server')
 	)
 );
@@ -126,6 +136,6 @@ task(
 	'build',
 	series(
 		'clean',
-		parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons')
+		parallel('copy:html', 'copy:img', 'copy:vid', 'styles', 'scripts', 'icons')
 	)
 );

@@ -10,12 +10,20 @@
 }
 
 .fixed-menu__item {
-	&--active {
+  display: flex;
+	&:hover {
 		.fixed-menu__dot {
-			border-color: #ffffff;
+      border-color: #ffffff;
+      transition: 0.3s;
 		}
 	}
 }
+
+// .section.active {
+//   .fixed-menu__dot {
+//     border-color: #ffffff;
+//   }
+// }
 
 .fixed-menu__dot {
 	position: relative;

@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Батончики CHOCCO</title>
   <link rel="stylesheet" href="main.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2648aefc-7120-416e-aff5-2644d35af83e&lang=ru_RU"
+    type="text/javascript">
+    </script>
 </head>
 
 <body>
@@ -14,7 +17,7 @@
   <div class="wrapper">
     <main class="maincontent">
 
-      <section class="section chocco">
+      <section class="section chocco active">
         <!-- <div class="chocco__background">
         </div> -->
         <div class="container container--chocco">
@@ -31,25 +34,25 @@
                 <nav class="nav">
                   <ul class="nav__list">
                     <li class="nav__item">
-                      <a href="#" class="nav__link">О нас</a>
+                      <a href data-scroll-to="1" class="nav__link">О нас</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Батончики</a>
+                      <a href data-scroll-to="2" class="nav__link">Батончики</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Команда</a>
+                      <a href data-scroll-to="3" class="nav__link">Команда</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Меню</a>
+                      <a href data-scroll-to="4" class="nav__link">Меню</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Отзывы</a>
+                      <a href data-scroll-to="5" class="nav__link">Отзывы</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Как мы работаем</a>
+                      <a href data-scroll-to="6" class="nav__link">Как мы работаем</a>
                     </li>
                     <li class="nav__item">
-                      <a href="#" class="nav__link">Контакты</a>
+                      <a href data-scroll-to="8" class="nav__link">Контакты</a>
                     </li>
                   </ul>
                 </nav>
@@ -716,6 +719,42 @@
           </div>
       </section>
 
+      <section class="section video">
+        <div class="container container--video">
+          <div class="headline video-headline">
+            <h2 class="headline__title video-headline__title">Как мы работаем</h2>
+          </div>
+          <div class="video-box">
+            <video class="video" id="video">
+              <source src="./vid/protein_bars.mp4" type="video/mp4">
+            </video>
+            <div class="controls">
+              <div class="controls__playback">
+                <button class="controls__button" id="play-pause">
+                  <i date-play-pause class="fas fa-play"></i>
+                  <!-- <i class="fas fa-pause"></i> -->
+                </button>
+                <div class="controls__bar">
+                  <div class="controls__bar--marker" id="controls__bar--playback">
+                  </div>
+                </div>
+              </div>
+
+              <div class="controls__volume">
+                <button class="controls__button" id="volume">
+                  <i date-volume class="fas fa-volume-off"></i>
+                </button>
+                <div id="controls__bar--volume" class="controls__bar">
+                  <div id="controls__bar--volume-mark" class="controls__bar--marker">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       <section class="section order">
         <div class="container container--order">
           <div class="headline__title headline__title--order">Закажите доставку</div>
@@ -815,8 +854,8 @@
 
       <section class="section map">
 
-        <div class="map__image-box">
-          <img class="map__image-pic" src="/img/content/map--map-image.png">
+        <div class="map__box">
+          <div id="map"></div>
         </div>
 
         <footer class="footer">
@@ -876,37 +915,38 @@
 
       </section>
 
-      <ul class="fixed-menu">
-        <li class="fixed-menu__item fixed-menu__item--active">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-        <li class="fixed-menu__item">
-          <button type="button" class="fixed-menu__dot"></button>
-        </li>
-      </ul>
-
     </main>
+
+    <ul class="fixed-menu">
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="1" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="2" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="3" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="4" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="5" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="6" class="fixed-menu__dot"></a>
+      </li>
+
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href data-scroll-to="8" class="fixed-menu__dot"></a>
+      </li>
+    </ul>
+
   </div>
 
   <script type="template" id="formOverlay">
@@ -919,7 +959,11 @@
 
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.clowdflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script> -->
+  <!-- <script src="mobile-detect.js"></script> -->
+  <script src="https://kit.fontawesome.com/0ca4bb35a1.js" crossorigin="anonymous"></script>
   <script src="main.min.js"></script>
+
 
   <!-- <div class="overlay">
     <div class="overlay__container">

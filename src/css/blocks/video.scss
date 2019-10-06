@@ -1,0 +1,52 @@
+.video {
+	background-color: $green-bg;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-image: url('../../img/bg/video--leaf-left.png');
+		width: 72px;
+		height: 135px;
+		bottom: 0;
+		left: 0;
+		transform: translateY(-63px);
+		z-index: 100;
+
+		@include tablets() {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background-image: url('../../img/bg/video--leaf-right.png');
+		width: 90px;
+		height: 77px;
+		z-index: 100;
+		right: 0;
+		top: 0;
+		transform: translate(-17px, 65px);
+	}
+}
+
+.video-headline {
+	margin-bottom: 50px;
+}
+
+.container--video {
+	align-items: center;
+	justify-content: center;
+}
+
+.video-box {
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+.video {
+	width: 100%;
+}
+

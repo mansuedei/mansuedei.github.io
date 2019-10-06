@@ -6,11 +6,13 @@
 	"dependencies": {
 		"gulp-if": "^3.0.0",
 		"jquery": "^3.4.1",
+		"mobile-detect": "^1.4.4",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.2",
 		"@babel/preset-env": "^7.6.2",
+		"@fortawesome/fontawesome-free": "^5.11.2",
 		"browser-sync": "^2.26.7",
 		"cross-env": "^6.0.3",
 		"gulp": "^4.0.2",
